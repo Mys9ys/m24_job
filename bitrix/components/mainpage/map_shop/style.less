@@ -1,0 +1,494 @@
+.error_attention{
+  border: 1px solid rgb(169, 68, 66)!important;
+  background: rgb(235, 204, 209)!important;
+}
+.phone_not8{
+  color: rgb(41,41,41);
+  font-size: 10px;
+}
+.quarantine{
+  color: rgb(41,41,41);
+  font-size: 16px;
+  padding-top: 15px;
+}
+#where_to_buy{
+  position: relative;
+}
+@media screen and (min-width:769px) {
+  #where_to_buy{
+    bottom:-20px;
+    margin: 0!important;
+    .map_title{
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+  }
+  #map{
+    height: 450px;
+    border-radius: 0 0 20px 20px;
+    box-shadow:4px 4px 5px -1px rgba(0,0,0,0.34) ;
+    overflow: hidden;
+  }
+  .shop_contain{
+    display: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.368px 3.759px 5px 0px rgba(0, 0, 0, 0.34);
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px;
+    z-index: 45;
+    padding: 5px 15px;
+    .close_btn{
+      transform: rotate(45deg);
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 800;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+    }
+    .metroText{
+      color: rgb(156, 194, 24);
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.2;
+      padding: 15px;
+      text-align: center;
+    }
+    .huomioShop{
+      padding-top: 10px;
+    }
+    .shopAdressModal{
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      width: 210px;
+      height: 60px;
+      background: rgb(156, 194, 24);
+      border-radius: 10px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.143;
+      text-align: center;
+      padding-top: 15px;
+      padding-left: 0;
+      cursor: pointer;
+      span{
+        display: inline-block;
+        width: 100%;
+        padding-left: 0!important;
+      }
+    }
+    .shopAdressModalContainer{
+      width: 200px;
+      height: 90px;
+    }
+  }
+  #smsSendModal{
+    .modal-header{
+      border-bottom:0px;
+      padding-bottom:0px;
+    }
+    .modal-dialog{
+      width:280px;
+      text-align:center;
+      top:200px;
+    }
+    .modal-footer{
+      border-top:0px;
+      padding-top:0px;
+    }
+    padding: 25px;
+    .phone_input_title{
+      color: rgb(156, 194, 24);
+      font-size: 14px;
+      font-weight: bold;
+    }
+    input{
+      color: rgb(156, 194, 24)!important;
+      border: 1px solid rgb(156, 194, 24);
+    }
+     input::-webkit-input-placeholder {color:rgb(156, 194, 24);}
+     input::-moz-placeholder          {color:rgb(156, 194, 24);}/* Firefox 19+ */
+     input:-moz-placeholder           {color:rgb(156, 194, 24);}/* Firefox 18- */
+     input:-ms-input-placeholder      {color:rgb(156, 194, 24);}
+    .getShopAdress, .error_send{
+      width: 250px;
+      height: 32px;
+      background: rgb(156, 194, 24);
+      border-radius: 10px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.143;
+      text-align: center;
+      padding-top: 8px;
+      padding-left: 0;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .error_send{
+      margin-top: 15px;
+    }
+  }
+  .huomio{
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-left: 20px;
+    span{
+      color: rgb(156, 194, 24);
+    }
+    span:first-child{
+      text-decoration: underline;
+    }
+  }
+  .panel_img_show_room{
+    width: 100%;
+    position: relative;
+    img{
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+// на средних разрешениях
+@media screen and (min-width: 426px) and (max-width: 768px)
+{
+  #where_to_buy{
+    bottom:-20px;
+    margin: 0!important;
+    .map_title{
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+  }
+  #map{
+    height: 450px;
+    border-radius: 0 0 20px 20px;
+    box-shadow:4px 4px 5px -1px rgba(0,0,0,0.34) ;
+    overflow: hidden;
+  }
+  .shop_contain{
+    display: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.368px 3.759px 5px 0px rgba(0, 0, 0, 0.34);
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px;
+    z-index: 45;
+    padding: 5px 15px;
+    .close_btn{
+      transform: rotate(45deg);
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 800;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+    }
+    .metroText{
+      color: rgb(156, 194, 24);
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.2;
+      padding: 15px;
+      text-align: center;
+    }
+    .huomioShop{
+      padding-top: 10px;
+    }
+    .shopAdressModal{
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      width: 200px;
+      height: 60px;
+      background: rgb(156, 194, 24);
+      border-radius: 10px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.143;
+      text-align: center;
+      padding-top: 15px;
+      padding-left: 0;
+      cursor: pointer;
+      span{
+        display: inline-block;
+        width: 100%;
+        padding-left: 0!important;
+      }
+    }
+    .shopAdressModalContainer{
+      width: 200px;
+      height: 90px;
+    }
+  }
+  #smsSendModal{
+    .modal-dialog{
+      text-align: center;
+    }
+    .modal-content{
+      left:50%;
+    }
+    .modal-header{
+      border-bottom:0px;
+      padding-bottom:0px;
+    }
+    .modal-dialog{
+      width:280px;
+      text-align:center;
+      top:200px;
+    }
+    .modal-footer{
+      border-top:0px;
+      padding-top:0px;
+    }
+    padding: 25px;
+    //width: 280px;
+    .phone_input_title{
+      color: rgb(156, 194, 24);
+      font-size: 14px;
+      font-weight: bold;
+    }
+    input{
+      color: rgb(156, 194, 24)!important;
+      border: 1px solid rgb(156, 194, 24);
+    }
+    input::-webkit-input-placeholder {color:rgb(156, 194, 24);}
+    input::-moz-placeholder          {color:rgb(156, 194, 24);}/* Firefox 19+ */
+    input:-moz-placeholder           {color:rgb(156, 194, 24);}/* Firefox 18- */
+    input:-ms-input-placeholder      {color:rgb(156, 194, 24);}
+    .getShopAdress, .error_send{
+      width: 250px;
+      height: 32px;
+      background: rgb(156, 194, 24);
+      border-radius: 10px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.143;
+      text-align: center;
+      padding-top: 8px;
+      padding-left: 0;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .error_send{
+      margin-top: 15px;
+    }
+  }
+  .huomio{
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-left: 20px;
+    span{
+      color: rgb(156, 194, 24);
+    }
+    span:first-child{
+      text-decoration: underline;
+    }
+  }
+  .panel_img_show_room{
+    width: 100%;
+    position: relative;
+    img{
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+/* Экран 425*/
+@media screen and (max-width:425px) {
+  #where_to_buy{
+    bottom:-20px;
+    margin: 0!important;
+    .map_title{
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+  }
+  #map{
+    height: 250px;
+    border-radius: 0 0 20px 20px;
+    box-shadow:4px 4px 5px -1px rgba(0,0,0,0.34) ;
+    overflow: hidden;
+  }
+  .shop_contain{
+    display: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.368px 3.759px 5px 0px rgba(0, 0, 0, 0.34);
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 45;
+    padding: 5px 15px;
+    .close_btn{
+      transform: rotate(45deg);
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 800;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+    }
+    .metroText{
+      color: rgb(156, 194, 24);
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.2;
+      padding: 15px;
+      text-align: center;
+    }
+    .huomioShop{
+      padding-top: 10px;
+    }
+    .shopAdressModal{
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      width: 170px;
+      height: 40px;
+      background: rgb(156, 194, 24);
+      border-radius: 10px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.143;
+      text-align: center;
+      padding-top: 7px;
+      padding-left: 0;
+      cursor: pointer;
+      span{
+        display: inline-block;
+        width: 100%;
+        padding-left: 0!important;
+      }
+    }
+    .shopAdressModalContainer{
+      width: 170px;
+      height: 50px;
+    }
+  }
+  #smsSendModal{
+    .modal-content{
+      left:50%;
+      transform: translateX(-50%);
+    }
+    .modal-header{
+      border-bottom:0px;
+      padding-bottom:0px;
+    }
+    .modal-dialog{
+      width:280px;
+      text-align:center;
+      top:200px;
+    }
+    .modal-footer{
+      border-top:0px;
+      padding-top:0px;
+    }
+    padding: 25px;
+    //width: 280px;
+    .phone_input_title{
+      color: rgb(156, 194, 24);
+      font-size: 14px;
+      font-weight: bold;
+    }
+    input{
+      color: rgb(156, 194, 24)!important;
+      border: 1px solid rgb(156, 194, 24);
+    }
+    input::-webkit-input-placeholder {color:rgb(156, 194, 24);}
+    input::-moz-placeholder          {color:rgb(156, 194, 24);}/* Firefox 19+ */
+    input:-moz-placeholder           {color:rgb(156, 194, 24);}/* Firefox 18- */
+    input:-ms-input-placeholder      {color:rgb(156, 194, 24);}
+    .getShopAdress, .error_send{
+      width: 250px;
+      height: 32px;
+      background: rgb(156, 194, 24);
+      border-radius: 10px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.143;
+      text-align: center;
+      padding-top: 8px;
+      padding-left: 0;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .error_send{
+      margin-top: 15px;
+    }
+  }
+  .huomio{
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-left: 20px;
+    span{
+      color: rgb(156, 194, 24);
+    }
+    span:first-child{
+      text-decoration: underline;
+    }
+  }
+  .panel_img_show_room{
+    width: 100%;
+    position: relative;
+    img{
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

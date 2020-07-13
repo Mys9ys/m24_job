@@ -1,0 +1,357 @@
+@media screen and (min-width: 1234px) {
+
+ .main-links-box{
+   margin-top: 40px;
+   width: 100%;
+   padding-left: 1px;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: -0.122px 0.993px 6px 0px rgba(65, 65, 65, 0.19);
+   .links-box{
+     float: left;
+     width: 308px;
+     height: 300px;
+     a{ text-decoration: none!important;}
+     .links-content{
+       position: relative;
+       width: 100%;
+       height: 300px;
+       img{
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+       }
+       color: rgb(144, 175, 30);
+       .links-title{
+         position: absolute;
+         top:0px;
+         left: 0px;
+         z-index: 1;
+         padding: 20px;
+         font-size: 22px;
+         text-transform: uppercase;
+       }
+       .links-count{
+         position: absolute;
+         right: 20px;
+         bottom: 20px;
+         width: 45px;
+         height: 45px;
+         background: rgb(255, 255, 255);
+         border-radius: 50%;
+         padding: 5px;
+         text-align: center;
+         font-size: 22px;
+         line-height: 22px;
+         vertical-align: middle;
+         padding-top: 10px;
+       }
+       .links-blackout{
+         position: absolute;
+         top:0;
+         left: 0;
+         width: 100%;
+         height: 300px;
+       }
+     }
+   }
+   .links-box:first-child{
+     width: 616px;
+     .links-count{
+       left: 20px;
+     }
+   }
+   .links-content:hover{
+     .links-blackout{
+       background-color: rgba(85, 85, 85, 0.65);
+       z-index: 1;
+     }
+      .links-title{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+      }
+     .links-count{
+       color: rgb(255, 255, 255);
+       background: rgb(144, 175, 30);
+       z-index: 2;
+     }
+   }
+ }
+}
+
+/*экран 768-1234*/
+@media screen and (min-width:768px) and (max-width:1233px)
+{
+  .main-links-box{
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -0.122px 0.993px 6px 0px rgba(65, 65, 65, 0.19);
+    .links-box{
+      float: left;
+      width: 25%;
+      height: 50%;
+      a{ text-decoration: none!important;}
+      .links-content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        color: rgb(144, 175, 30);
+        .links-title{
+          position: absolute;
+          top:0px;
+          left: 0px;
+          z-index: 2;
+          padding: 10px;
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+        .links-count{
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          width: 35px;
+          height: 35px;
+          background: rgb(255, 255, 255);
+          border-radius: 50%;
+          padding: 5px;
+          text-align: center;
+          font-size: 18px;
+          line-height: 16px;
+          vertical-align: middle;
+          padding-top: 10px;
+        }
+        .links-blackout{
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .links-box:first-child{
+      width: 50%;
+      .links-count{
+        left: 20px;
+      }
+    }
+    .links-content:hover{
+      .links-blackout{
+        background-color: rgba(85, 85, 85, 0.65);
+        z-index: 1;
+      }
+      .links-title{
+        position: relative;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+      }
+      .links-count{
+        color: rgb(255, 255, 255);
+        background: rgb(144, 175, 30);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+/*экран 768*/
+@media screen and (min-width:620px) and (max-width:768px)
+{
+
+  .main-links-box{
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -0.122px 0.993px 6px 0px rgba(65, 65, 65, 0.19);
+    .links-box{
+      float: left;
+      width: 33.33%;
+      height: 33.33%;
+      a{ text-decoration: none!important;}
+      .links-content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        color: rgb(144, 175, 30);
+        .links-title{
+          position: absolute;
+          top:10px;
+          left:10px;
+          font-size: 16px;
+          text-transform: uppercase;
+          z-index: 1;
+        }
+        .links-count{
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          width: 35px;
+          height: 35px;
+          background: rgb(255, 255, 255);
+          border-radius: 50%;
+          padding: 5px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 14px;
+          vertical-align: middle;
+          padding-top: 10px;
+        }
+        .links-blackout{
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .links-box:first-child{
+      width: 66.66%;
+      .links-count{
+        left: 20px;
+      }
+    }
+    .links-box:last-child{
+      width: 66.66%;
+    }
+    .links-content:hover{
+      .links-blackout{
+        background-color: rgba(85, 85, 85, 0.65);
+        z-index: 1;
+      }
+      .links-title{
+        color: rgb(255, 255, 255);
+        z-index: 2;
+      }
+      .links-count{
+        color: rgb(255, 255, 255);
+        background: rgb(144, 175, 30);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+/* Экран 425*/
+@media screen and (max-width:619px) {
+  .main-links-box{
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -0.122px 0.993px 6px 0px rgba(65, 65, 65, 0.19);
+    .links-box{
+      float: left;
+      width: 50%;
+      height: 25%;
+      a{ text-decoration: none!important;}
+      .links-content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        color: rgb(144, 175, 30);
+        .links-title{
+          position: absolute;
+          top:10px;
+          left:10px;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          z-index: 1;
+        }
+        .links-count{
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          width: 35px;
+          height: 35px;
+          background: rgb(255, 255, 255);
+          border-radius: 50%;
+          padding: 5px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 14px;
+          vertical-align: middle;
+          padding-top: 10px;
+        }
+        .links-blackout{
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .links-box:first-child{
+      height: 50%;
+      .links-count{
+        left: 20px;
+        bottom: 60px;
+      }
+      .links-title{
+        top: 92%;
+      }
+    }
+    .links-content:hover{
+      .links-blackout{
+        background-color: rgba(85, 85, 85, 0.65);
+        z-index: 1;
+      }
+      .links-title{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        z-index: 2;
+      }
+      .links-count{
+        color: rgb(255, 255, 255);
+        background: rgb(144, 175, 30);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:390px) {
+  .main-links-box{
+    .links-box:first-child{
+      .links-count{
+        left: 20px;
+        bottom: 60px;
+      }
+      .links-title{
+        top: 87%;
+      }
+    }
+  }
+}

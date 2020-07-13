@@ -1,0 +1,687 @@
+#brands_owl{
+  line-height: 100px;
+  .owlElement{
+    img{
+      max-width: 140px;
+    }
+  }
+}
+#block-advantages{
+  .right-block{
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      color: rgb(156, 194, 24);
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 1234px) {
+  #block-brands{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .brands-title{
+      padding-top: 90px;
+      font-size: 30px;
+      color: rgb(144, 152, 166);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+  .slaider_wrapper{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(234, 182, 41);
+    position: relative;
+    .btn_all_vendors{
+      float: right;
+      margin-top: 43px;
+      margin-right: 55px;
+      display: inline-block;
+      color: rgb(234, 182, 41);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 8px 14px;
+      background: repeating-linear-gradient(to top, rgb(72, 85, 108) 0%,  rgb(27, 33, 43) 40%, rgb(20, 25, 34) 60%, rgb(53, 59, 69) 100%); /*Standard*/
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    }
+    .btn_all_vendors:hover{
+      color: rgb(156, 194, 24);
+    }
+  }
+  #brands_owl{
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 100px;
+    float: left;
+    width: 85%;
+    .owlElement{
+      img{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 105px;
+        vertical-align: middle;
+      }
+    }
+
+    .owl-prev{
+      position: absolute;
+      top:50%;
+      left:15px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background-image: url("/bitrix/components/mainpage/brands/images/prev.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 13px;
+      height: 32px;
+    }
+    .owl-next{
+      position: absolute;
+      top:50%;
+      right: 15px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background-image: url("/bitrix/components/mainpage/brands/images/next.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 13px;
+      height: 32px;
+    }
+  }
+  #block-advantages{
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.08);
+    height: 600px;
+    margin-top: 85px;
+    .advantages-title {
+      margin-left: 70px;
+      border-bottom: 2px solid rgb(156, 194, 24);
+      font-size: 36px;
+      color: rgb(156, 194, 24);
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 260px;
+      margin-bottom: 60px;
+      span {
+        position: relative;
+        top: 11px;
+        left: -17px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 72px;
+        border-radius: 50%;
+        line-height: 0.6em;
+        padding-left: 3px;
+        font-weight: 400;
+      }
+    }
+    .left-line{
+      float: left;
+      width: 175px;
+      height: 300px;
+      .green-line{
+        position: relative;
+        top: 30px;
+        right: 33px;
+        height: 300px;
+        border-right: 2px solid rgb(156, 194, 24);
+      }
+    }
+    .right-block{
+      position: relative;
+      float: left;
+      width: 460px;
+      span{
+        position: absolute;
+        left: -50px;
+        margin-top: 15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        border-radius: 50%;
+        line-height: 1.7em;
+        padding-left: 3px;
+        font-weight: bold;
+      }
+      .main-title{
+        font-size: 24px;
+        color: rgb(156, 194, 24);
+        font-weight: bold;
+        line-height: 1.25;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .main-text{
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+    .oxxy-advantages-img{
+      position: absolute;
+      bottom: 0px;
+      right: 100px;
+      img{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 100%;
+        //height: 580px;
+      }
+    }
+  }
+}
+
+/*экран 768-1234*/
+@media screen and (min-width:768px) and (max-width:1233px)
+{
+  #block-brands{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    .brands-title{
+      padding-top: 90px;
+      font-size: 22px;
+      color: rgb(144, 152, 166);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+  .slaider_wrapper{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(234, 182, 41);
+    position: relative;
+    .btn_all_vendors{
+      float: right;
+      margin-top: 47px;
+      margin-right: 25px;
+      display: inline-block;
+      color: rgb(234, 182, 41);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 5px 10px;
+      background: repeating-linear-gradient(to top, rgb(72, 85, 108) 0%,  rgb(27, 33, 43) 40%, rgb(20, 25, 34) 60%, rgb(53, 59, 69) 100%); /*Standard*/
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    }
+    .btn_all_vendors:hover{
+      color: rgb(156, 194, 24);
+    }
+  }
+  #brands_owl{
+    float:left;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 100px;
+    .owlElement{
+      img{
+        max-height: 105px;
+        vertical-align: middle;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .owl-prev{
+        position: absolute;
+        top:50%;
+        left:10px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/bitrix/components/mainpage/brands/images/prev.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 13px;
+        height: 32px;
+      }
+      .owl-next{
+        position: absolute;
+        top:50%;
+        right: 10px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/bitrix/components/mainpage/brands/images/next.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 13px;
+        height: 32px;
+      }
+    }
+  }
+  #block-advantages{
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.08);
+    height: 600px;
+    margin-top: 55px;
+    .advantages-title {
+      margin-left: 70px;
+      border-bottom: 2px solid rgb(156, 194, 24);
+      font-size: 28px;
+      color: rgb(156, 194, 24);
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 60px;
+      span {
+        position: relative;
+        top: 10px;
+        left: -17px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        border-radius: 50%;
+        line-height: 0.6em;
+        padding-left: 3px;
+        font-weight: 400;
+      }
+    }
+    .left-line{
+      float: left;
+      width: 150px;
+      height: 300px;
+      .green-line{
+        position: relative;
+        top: 30px;
+        right: 33px;
+        height: 300px;
+        border-right: 2px solid rgb(156, 194, 24);
+      }
+    }
+    .right-block{
+      position: relative;
+      float: left;
+      width: 460px;
+      span{
+        position: absolute;
+        left: -50px;
+        margin-top: 15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        border-radius: 50%;
+        line-height: 1.7em;
+        padding-left: 3px;
+        font-weight: bold;
+      }
+      .main-title{
+        font-size: 24px;
+        color: rgb(156, 194, 24);
+        font-weight: bold;
+        line-height: 1.25;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .main-text{
+        font-size: 12px;
+        padding-left: 10px;
+      }
+    }
+    .oxxy-advantages-img{
+      position: absolute;
+      bottom: 0px;
+      right: 2%;
+      width: 30%;
+      img {
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*экран 768*/
+@media screen and (min-width:620px) and (max-width:768px)
+{
+  #block-brands{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    .brands-title{
+      padding-top: 90px;
+      font-size: 22px;
+      color: rgb(144, 152, 166);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+  .slaider_wrapper{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(234, 182, 41);
+    position: relative;
+    .btn_all_vendors{
+      float: right;
+      margin-top: 55px;
+      margin-right: 25px;
+      display: inline-block;
+      color: rgb(234, 182, 41);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 5px 8px;
+      background: repeating-linear-gradient(to top, rgb(72, 85, 108) 0%,  rgb(27, 33, 43) 40%, rgb(20, 25, 34) 60%, rgb(53, 59, 69) 100%); /*Standard*/
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    }
+    .btn_all_vendors:hover{
+      color: rgb(156, 194, 24);
+    }
+  }
+  #brands_owl{
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 100px;
+    width: 80%;
+    .owlElement{
+      img{
+        max-height: 105px;
+        vertical-align: middle;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  #block-advantages{
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 15px;
+    min-height: 450px;
+    .advantages-title {
+      margin-left: 70px;
+      border-bottom: 2px solid rgb(156, 194, 24);
+      font-size: 24px;
+      color: rgb(156, 194, 24);
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 30px;
+      span {
+        position: relative;
+        top: 10px;
+        left: -17px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        border-radius: 50%;
+        line-height: 0.6em;
+        padding-left: 3px;
+        font-weight: 400;
+      }
+    }
+    .left-line{
+      float: left;
+      width: 15%;
+      height: 300px;
+      .green-line{
+        position: relative;
+        top: 30px;
+        right: 33px;
+        height: 340px;
+        border-right: 2px solid rgb(156, 194, 24);
+      }
+    }
+    .right-block{
+      position: relative;
+      float: left;
+      width: 85%;
+      margin-bottom: 25px;
+      span{
+        position: absolute;
+        left: -50px;
+        margin-top: 15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        border-radius: 50%;
+        line-height: 1.7em;
+        padding-left: 3px;
+        font-weight: bold;
+      }
+      .main-title{
+        position: relative;
+        z-index: 1;
+        font-size: 24px;
+        color: rgb(156, 194, 24);
+        font-weight: bold;
+        line-height: 1.25;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .main-text{
+        position: relative;
+        z-index: 1;
+        font-size: 12px;
+        padding-left: 10px;
+        width: 55%;
+      }
+    }
+    .oxxy-advantages-img{
+      position: absolute;
+      bottom: 0px;
+      right: 1%;
+      width: 35%;
+      img{
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Экран 425*/
+@media screen and (max-width:619px) {
+  #block-brands{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    .brands-title{
+      padding: 50px 10px 30px 10px;
+      font-size: 22px;
+      color: rgb(144, 152, 166);
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+  }
+  .slaider_wrapper{
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(234, 182, 41);
+    position: relative;
+    .btn_all_vendors{
+      position: absolute;
+      bottom:-15px;
+      right: 5px;
+      margin-top: 55px;
+      margin-right: 25px;
+      display: inline-block;
+      color: rgb(234, 182, 41);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 5px 8px;
+      background: repeating-linear-gradient(to top, rgb(72, 85, 108) 0%,  rgb(27, 33, 43) 40%, rgb(20, 25, 34) 60%, rgb(53, 59, 69) 100%); /*Standard*/
+      border-radius: 5px;
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      z-index: 2;
+    }
+    .btn_all_vendors:hover{
+      color: rgb(156, 194, 24);
+    }
+  }
+  #brands_owl{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(234, 182, 41);
+    line-height: 100px;
+    .owlElement{
+      img{
+        max-height: 105px;
+        vertical-align: middle;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  #block-advantages{
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 14px 16px 0px rgba(0, 0, 0, 0.08);
+    margin-top: 15px;
+    min-height: 350px;
+    .advantages-title {
+      margin-left: 45px;
+      border-bottom: 2px solid rgb(156, 194, 24);
+      font-size: 18px;
+      color: rgb(156, 194, 24);
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 30px;
+      span {
+        position: relative;
+        top: 10px;
+        left: -17px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        border-radius: 50%;
+        line-height: 0.6em;
+        padding-left: 3px;
+        font-weight: 400;
+      }
+    }
+    .left-line{
+      float: left;
+      width: 15%;
+      height: 300px;
+      .green-line{
+        position: relative;
+        top: 30px;
+        right: 33px;
+        height: 280px;
+        border-right: 2px solid rgb(156, 194, 24);
+      }
+    }
+    .right-block{
+      position: relative;
+      float: left;
+      width: 85%;
+      margin-bottom: 25px;
+      span{
+        position: absolute;
+        left: -13%;
+        margin-top: 15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: rgb(156, 194, 24);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        border-radius: 50%;
+        line-height: 1.7em;
+        padding-left: 3px;
+        font-weight: bold;
+      }
+      .main-title{
+        position: relative;
+        z-index: 1;
+        font-size: 18px;
+        color: rgb(156, 194, 24);
+        font-weight: bold;
+        line-height: 1.25;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .main-text{
+        position: relative;
+        z-index: 1;
+        font-size: 10px;
+        padding-left: 10px;
+        width: 55%;
+      }
+    }
+    .oxxy-advantages-img{
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      right: 1%;
+      width: 35%;
+      img{
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+

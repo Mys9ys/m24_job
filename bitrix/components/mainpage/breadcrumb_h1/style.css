@@ -1,0 +1,21 @@
+/***BREADCRUMBS***/
+#breadcrumb ul li a,
+#breadcrumb ul li span {
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.2;
+}
+#breadcrumb ul li.separator span {
+  color: #1a1a1a;
+}
+#breadcrumb ul li a:hover span {
+  text-decoration: underline;
+}
+#breadcrumb a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 24px;
+  color: #2c2c2c !important;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,3649 @@
+@Pagencolor: rgb(156, 194, 24);
+@Pagenred: rgb(255, 99, 71);
+// лоадер на увеличение количества/удаление
+#spiner_modal{
+  .modal-dialog{
+    width: 50px;
+    top:50%;
+    transform: translateY(-50%);
+    color:@Pagencolor;
+  }
+}
+
+.delivery_city_select_box {
+  box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1234px) {
+  // товары в корзине
+  .basket_products_box {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    // названия пунктов в корзине
+    .basket_product_title {
+      font-weight: bold;
+      .product_title {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        padding-left: 110px;
+        width: 440px;
+      }
+      .price_one_title {
+        display: inline-block;
+        float: left;
+        width: 130px;
+      }
+      .quantity_title {
+        display: inline-block;
+        float: left;
+        width: 70px;
+      }
+      .summary_title {
+        display: inline-block;
+        float: left;
+        width: 130px;
+      }
+    }
+    .product_item:nth-of-type(2n) {
+      background: rgba(222, 224, 238, 0.5);
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      //margin-top: 2px;
+      .product_number {
+        display: inline-block;
+        width: 20px;
+        float: left;
+        font-size: 14px;
+        padding-top: 22px;
+        color: rgb(40, 40, 40);
+        text-align: center;
+        position: relative;
+      }
+      .product_img {
+        display: inline-block;
+        width: 80px;
+        float: left;
+        img {
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 66px;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 350px;
+        float: left;
+        font-size: 14px;
+        padding-top: 22px;
+        padding-left: 6px;
+        color: @Pagencolor;
+        text-decoration: none;
+        text-align: left;
+      }
+      .basket_quantity {
+        display: inline-block;
+        width: 60px;
+        float: left;
+        margin-top: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+        .quantity_product_change {
+          float: left;
+          display: inline-block;
+          width: 17px;
+          height: 24px;
+          line-height: 24px;
+          background: @Pagencolor;
+          color: rgb(255, 255, 255);
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+        }
+        .quantity_product_field {
+          display: inline-block;
+          width: 26px;
+          height: 24px;
+          float: left;
+          text-align: center;
+          padding: 1px;
+          border: 1px solid @Pagencolor;
+        }
+      }
+      .product_price {
+        display: inline-block;
+        width: 130px;
+        float: left;
+      }
+      .old_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        padding-top: 6px;
+        color: @Pagenred;
+        text-decoration: line-through;
+      }
+      .discount_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        color: @Pagencolor;
+      }
+      .price_end {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .price_no_discount {
+        display: inline-block;
+        width: 100%;
+        padding-top: 22px;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .product_price_summary {
+        display: inline-block;
+        width: 130px;
+        float: left;
+      }
+    }
+    .delete_product {
+      display: inline-block;
+      float: right;
+      color: rgba(40, 40, 40, 0.4);
+      margin-right: 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(40, 40, 40, 0.4);
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    .delete_product:hover {
+      color: @Pagenred;
+      border: 1px solid @Pagenred;
+    }
+    .basket_delivery_block {
+      .basket_delivery_title {
+        display: inline-block;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        width: 550px;
+        padding: 5px;
+        padding-left: 107px;
+        text-align: left;
+      }
+      .basket_delivery_price {
+        display: inline-block;
+        width: 130px;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        padding: 5px;
+        padding-left: 27px;
+      }
+    }
+    .basket_summary_block {
+      color: rgb(40, 40, 40);
+      .basket_summary_price {
+        display: inline-block;
+        width: 790px;
+        float: left;
+        text-align: right;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        .basket_summary_price_title {
+          display: inline-block;
+          width: 640px;
+          float: left;
+        }
+        .basket_summary_price_value {
+          display: inline-block;
+          width: 140px;
+          float: left;
+          text-align: center;
+        }
+      }
+      .basket_summary_profit {
+        display: inline-block;
+        width: 130px;
+        float: left;
+        padding: 5px;
+        color: @Pagencolor;
+        font-weight: bold;
+        .basket_summary_profit_title {
+          display: inline-block;
+          float: left;
+        }
+        span {
+          display: inline-block;
+          float: left;
+        }
+      }
+    }
+  }
+
+  // блок
+  .order_box, .order-info {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(222, 224, 238);
+  }
+
+  //название блока
+  .block_basket_title {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: @Pagencolor;
+    padding: 15px 25px;
+    border: 1px solid @Pagencolor;
+    font-size: 18px;
+  }
+
+  .form_input_basket{
+    display: inline-block;
+    width: 31%!important;
+    border: 1px solid rgb(156, 194, 24);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .form_input_basket:first-of-type{
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .form_input_basket:nth-last-of-type(2){
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .paysystem_item {
+    display: inline-block;
+    width: 550px;
+    padding: 15px;
+    cursor: pointer;
+    .check_pay_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+      width: 80px;
+      height: 55px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .paysystem_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    .check_delivery_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem_delivery {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .delivery_check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .delivery_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      margin-left: 15px;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .delivery_city_select_box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    margin-bottom: 6px;
+    .delivery_city_select {
+      display: inline-block;
+      color: rgb(156, 194, 24);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .delivery_block_city {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0;
+    width: 80%;
+    .search-box {
+      display: none;
+    }
+    .delivery_search_string {
+      width: 100%;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      margin-top: 2px;
+      background: rgb(255, 255, 255);
+      border: 2px solid rgba(156, 194, 24, 0.3);
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      z-index: 10;
+      padding: 10px 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      font-size: 18px;
+      top: -6px;
+      right: -6px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      color: rgba(156, 194, 24, 1);
+      cursor: pointer;
+    }
+    .search-item {
+      padding: 5px;
+      a {
+        font-weight: bold;
+      }
+
+    }
+    .search-item:nth-child(n+2) {
+      border-top: 1px solid rgba(156, 194, 24, 0.3);
+    }
+    .search-item:hover {
+      background: rgba(156, 194, 24, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .basket_delivery_address {
+    position: relative;
+    .address_left {
+      display: inline-block;
+      float: left;
+    }
+    .address_right {
+      display: inline-block;
+      float: left;
+    }
+    .delivery_wrapper {
+      display: inline-block;
+    }
+    .address_delivery_slot {
+      width: 94px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid rgb(156, 194, 24);
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 11px;
+      margin-right: 6px;
+    }
+    .delivery_home {
+      margin-left: 15px;
+    }
+    .delivery_street {
+      width: 300px;
+      margin-left: 15px;
+      //margin-bottom: ;
+    }
+    .delivery_description_comment {
+      width: 300px;
+      height: 82px;
+      color: rgb(40, 40, 40) !important;
+      //box-sizing: border-box;
+      //display: inline-block;
+      border: 1px solid rgb(156, 194, 24) !important;
+      font-size: 14px;
+      padding: 5px 9px;
+      border-radius: 5px;
+    }
+  }
+
+  .basket_button_confirm {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .alert_element {
+    border: 1px solid @Pagenred;
+  }
+
+  .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid @Pagenred;
+    border-radius: 5px;
+    color: @Pagenred;
+    margin-right: 3px;
+  }
+
+  // страница после подтверждения заказа
+  .notetext {
+    color: rgb(40, 40, 40);
+    p {
+      display: inline-block;
+      width: 100%;
+      padding: 8px !important;
+    }
+  }
+
+  .card_payment_btn {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .card_payment_btn:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+
+  .order_avatar {
+    display: inline-block;
+    float: left;
+    border: 2px solid rgb(156, 194, 24);
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .confirm_order_chat {
+    display: inline-block;
+    width: 350px;
+    margin-top: 45px;
+    margin-left: 10px;
+    .confirm_title_chat {
+      display: inline-block;
+      width: 350px;
+      position: relative;
+      padding: 10px 20px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      background: rgb(156, 194, 24);
+      border-radius: 25px;
+      margin-bottom: 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        bottom: -2px;
+        left: -7px;
+        height: 20px;
+        border-left: 20px solid rgb(156, 194, 24);
+        border-bottom-right-radius: 16px 14px;
+        transform: translate(0, -2px);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        bottom: -2px;
+        left: 23px;
+        width: 7px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-bottom-right-radius: 10px;
+        transform: translate(-30px, -2px);
+      }
+    }
+  }
+
+  .products_block {
+    display: inline-block;
+    margin-top: 25px;
+    .confirm_order {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+    .confirm_sum_price {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+  }
+
+  .order_box_temp {
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid rgb(156, 194, 24);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 45px;
+    .order_title_temp {
+      position: absolute;
+      top: -30px;
+      left: 5px;
+      display: inline-block;
+      border-radius: 10px 10px 0 0;
+      background: rgb(156, 194, 24);
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      margin-top: 8px;
+      font-size: 14px;
+      .product_count {
+        display: inline-block;
+        width: 25px;
+        float: left;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .product_pic {
+        display: inline-block;
+        width: 90px;
+        float: left;
+        height: 74px;
+        img {
+          max-width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 550px;
+        float: left;
+        padding-top: 30px;
+        padding-left: 15px;
+        a {
+          text-decoration: none;
+          color: rgb(40, 40, 40);
+        }
+      }
+      .product_name:hover {
+        color: rgb(156, 194, 24);
+      }
+      .product_quantity {
+        display: inline-block;
+        width: 40px;
+        float: left;
+        padding-top: 30px;
+        text-align: center;
+      }
+      .product_price {
+        display: inline-block;
+        width: 150px;
+        float: left;
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+    .product_item:nth-child(2n) {
+      background: rgba(40, 40, 40, 0.15);
+    }
+    .props_text{
+      margin: 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+/*экран 1014-1234*/
+@media screen and (min-width: 1014px) and (max-width: 1233px) {
+  #workarea {
+    width: 100% !important;
+  }
+
+  // товары в корзине
+  .basket_products_box {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    // названия пунктов в корзине
+    .basket_product_title {
+      font-weight: bold;
+      .product_title {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        padding-left: 110px;
+        width: 440px;
+      }
+      .price_one_title {
+        display: inline-block;
+        float: left;
+        width: 130px;
+      }
+      .quantity_title {
+        display: inline-block;
+        float: left;
+        width: 70px;
+      }
+      .summary_title {
+        display: inline-block;
+        float: left;
+        width: 130px;
+      }
+    }
+    .product_item:nth-of-type(2n) {
+      background: rgba(222, 224, 238, 0.5);
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      //margin-top: 2px;
+      .product_number {
+        display: inline-block;
+        width: 20px;
+        float: left;
+        font-size: 14px;
+        padding-top: 22px;
+        color: rgb(40, 40, 40);
+        text-align: center;
+        position: relative;
+      }
+      .product_img {
+        display: inline-block;
+        width: 80px;
+        float: left;
+        img {
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 66px;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 350px;
+        float: left;
+        font-size: 14px;
+        padding-top: 22px;
+        padding-left: 6px;
+        color: @Pagencolor;
+        text-decoration: none;
+        text-align: left;
+      }
+      .basket_quantity {
+        display: inline-block;
+        width: 60px;
+        float: left;
+        margin-top: 20px;
+        border-radius: 3px;
+        overflow: hidden;
+        .quantity_product_change {
+          float: left;
+          display: inline-block;
+          width: 17px;
+          height: 24px;
+          line-height: 24px;
+          background: @Pagencolor;
+          color: rgb(255, 255, 255);
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+        }
+        .quantity_product_field {
+          display: inline-block;
+          width: 26px;
+          height: 24px;
+          float: left;
+          text-align: center;
+          padding: 1px;
+          border: 1px solid @Pagencolor;
+        }
+      }
+      .product_price {
+        display: inline-block;
+        width: 130px;
+        float: left;
+      }
+      .old_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        padding-top: 6px;
+        color: @Pagenred;
+        text-decoration: line-through;
+      }
+      .discount_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        color: @Pagencolor;
+      }
+      .price_end {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .price_no_discount {
+        display: inline-block;
+        width: 100%;
+        padding-top: 22px;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .product_price_summary {
+        display: inline-block;
+        width: 130px;
+        float: left;
+      }
+    }
+    .delete_product {
+      display: inline-block;
+      float: right;
+      color: rgba(40, 40, 40, 0.4);
+      margin-right: 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(40, 40, 40, 0.4);
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 14px;
+    }
+    .delete_product:hover {
+      color: @Pagenred;
+      border: 1px solid @Pagenred;
+    }
+    .basket_delivery_block {
+      .basket_delivery_title {
+        display: inline-block;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        width: 550px;
+        padding: 5px;
+        padding-left: 107px;
+        text-align: left;
+      }
+      .basket_delivery_price {
+        display: inline-block;
+        width: 130px;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        padding: 5px;
+        padding-left: 27px;
+      }
+    }
+    .basket_summary_block {
+      color: rgb(40, 40, 40);
+      .basket_summary_price {
+        display: inline-block;
+        width: 790px;
+        float: left;
+        text-align: right;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        .basket_summary_price_title {
+          display: inline-block;
+          width: 640px;
+          float: left;
+        }
+        .basket_summary_price_value {
+          display: inline-block;
+          width: 140px;
+          float: left;
+          text-align: center;
+        }
+      }
+      .basket_summary_profit {
+        display: inline-block;
+        width: 130px;
+        float: left;
+        padding: 5px;
+        color: @Pagencolor;
+        font-weight: bold;
+        .basket_summary_profit_title {
+          display: inline-block;
+          float: left;
+        }
+        span {
+          display: inline-block;
+          float: left;
+        }
+      }
+    }
+  }
+
+  // блок
+  .order_box, .order-info {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(222, 224, 238);
+  }
+
+  //название блока
+  .block_basket_title {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: @Pagencolor;
+    padding: 15px 25px;
+    border: 1px solid @Pagencolor;
+    font-size: 18px;
+  }
+
+  .form_input_basket {
+    display: inline-block;
+    width: 31%!important;
+    border: 1px solid rgb(156, 194, 24);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .form_input_basket:first-of-type{
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .form_input_basket:nth-last-of-type(2){
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .paysystem_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    .check_pay_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .paysystem_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    .check_delivery_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem_delivery {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .delivery_check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .delivery_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      margin-left: 10px;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .delivery_city_select_box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    margin-bottom: 6px;
+    .delivery_city_select {
+      display: inline-block;
+      color: rgb(156, 194, 24);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .delivery_block_city {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0;
+    width: 80%;
+    .search-box {
+      display: none;
+    }
+    .delivery_search_string {
+      width: 100%;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      margin-top: 2px;
+      background: rgb(255, 255, 255);
+      border: 2px solid rgba(156, 194, 24, 0.3);
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      z-index: 10;
+      padding: 10px 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      font-size: 18px;
+      top: -6px;
+      right: -6px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      color: rgba(156, 194, 24, 1);
+      cursor: pointer;
+    }
+    .search-item {
+      padding: 5px;
+      a {
+        font-weight: bold;
+      }
+
+    }
+    .search-item:nth-child(n+2) {
+      border-top: 1px solid rgba(156, 194, 24, 0.3);
+    }
+    .search-item:hover {
+      background: rgba(156, 194, 24, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .basket_delivery_address {
+    position: relative;
+    .address_left {
+      display: inline-block;
+      float: left;
+    }
+    .address_right {
+      display: inline-block;
+      float: left;
+    }
+    .delivery_wrapper {
+      display: inline-block;
+    }
+    .address_delivery_slot {
+      width: 94px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid rgb(156, 194, 24);
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 11px;
+      margin-right: 6px;
+    }
+    .delivery_home {
+      margin-left: 15px;
+    }
+    .delivery_street {
+      width: 300px;
+      margin-left: 15px;
+      //margin-bottom: ;
+    }
+    .delivery_description_comment {
+      width: 300px;
+      height: 82px;
+      color: rgb(40, 40, 40) !important;
+      //box-sizing: border-box;
+      //display: inline-block;
+      border: 1px solid rgb(156, 194, 24) !important;
+      font-size: 14px;
+      padding: 5px 9px;
+      border-radius: 5px;
+    }
+  }
+
+  .basket_button_confirm {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .alert_element {
+    border: 1px solid @Pagenred;
+  }
+
+  .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid @Pagenred;
+    border-radius: 5px;
+    color: @Pagenred;
+    margin-right: 3px;
+  }
+
+  // страница после подтверждения заказа
+  .notetext {
+    color: rgb(40, 40, 40);
+    p {
+      display: inline-block;
+      width: 100%;
+      padding: 8px !important;
+    }
+  }
+
+  .card_payment_btn {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .card_payment_btn:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+
+  .order_avatar {
+    display: inline-block;
+    float: left;
+    border: 2px solid rgb(156, 194, 24);
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .confirm_order_chat {
+    display: inline-block;
+    width: 350px;
+    margin-top: 45px;
+    margin-left: 10px;
+    .confirm_title_chat {
+      display: inline-block;
+      width: 350px;
+      position: relative;
+      padding: 10px 20px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      background: rgb(156, 194, 24);
+      border-radius: 25px;
+      margin-bottom: 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        bottom: -2px;
+        left: -7px;
+        height: 20px;
+        border-left: 20px solid rgb(156, 194, 24);
+        border-bottom-right-radius: 16px 14px;
+        transform: translate(0, -2px);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        bottom: -2px;
+        left: 23px;
+        width: 7px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-bottom-right-radius: 10px;
+        transform: translate(-30px, -2px);
+      }
+    }
+  }
+
+  .products_block {
+    display: inline-block;
+    margin-top: 25px;
+    .confirm_order {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+    .confirm_sum_price {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+  }
+
+  .order_box_temp {
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid rgb(156, 194, 24);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 45px;
+    .order_title_temp {
+      position: absolute;
+      top: -30px;
+      left: 5px;
+      display: inline-block;
+      border-radius: 10px 10px 0 0;
+      background: rgb(156, 194, 24);
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      margin-top: 8px;
+      font-size: 14px;
+      .product_count {
+        display: inline-block;
+        width: 25px;
+        float: left;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .product_pic {
+        display: inline-block;
+        width: 90px;
+        float: left;
+        height: 74px;
+        img {
+          max-width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 550px;
+        float: left;
+        padding-top: 30px;
+        padding-left: 15px;
+        a {
+          text-decoration: none;
+          color: rgb(40, 40, 40);
+        }
+      }
+      .product_name:hover {
+        color: rgb(156, 194, 24);
+      }
+      .product_quantity {
+        display: inline-block;
+        width: 40px;
+        float: left;
+        padding-top: 30px;
+        text-align: center;
+      }
+      .product_price {
+        display: inline-block;
+        width: 150px;
+        float: left;
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+    .product_item:nth-child(2n) {
+      background: rgba(40, 40, 40, 0.15);
+    }
+    .props_text{
+      margin: 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+/*экран 768-1013*/
+@media screen and (min-width: 768px) and (max-width: 1013px) {
+
+  // товары в корзине
+  .basket_products_box {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px;
+    // названия пунктов в корзине
+    .basket_product_title {
+      font-weight: bold;
+      .product_title {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        padding-left: 91px;
+        width: 360px;
+      }
+      .price_one_title {
+        display: inline-block;
+        float: left;
+        width: 100px;
+      }
+      .quantity_title {
+        display: inline-block;
+        float: left;
+        width: 60px;
+      }
+      .summary_title {
+        display: inline-block;
+        float: left;
+        width: 110px;
+      }
+    }
+    .product_item:nth-of-type(2n) {
+      background: rgba(222, 224, 238, 0.5);
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      //margin-top: 2px;
+      .product_number {
+        display: inline-block;
+        width: 20px;
+        float: left;
+        font-size: 14px;
+        padding-top: 22px;
+        color: rgb(40, 40, 40);
+        text-align: center;
+        position: relative;
+      }
+      .product_img {
+        display: inline-block;
+        width: 65px;
+        float: left;
+        img {
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 54px;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 270px;
+        float: left;
+        font-size: 12px;
+        padding-top: 18px;
+        margin-left: 6px;
+        color: @Pagencolor;
+        text-decoration: none;
+        text-align: left;
+      }
+      .basket_quantity {
+        display: inline-block;
+        width: 60px;
+        float: left;
+        margin-top: 15px;
+        border-radius: 3px;
+        overflow: hidden;
+        .quantity_product_change {
+          float: left;
+          display: inline-block;
+          width: 17px;
+          height: 24px;
+          line-height: 24px;
+          background: @Pagencolor;
+          color: rgb(255, 255, 255);
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+        }
+        .quantity_product_field {
+          display: inline-block;
+          width: 26px;
+          height: 24px;
+          float: left;
+          text-align: center;
+          padding: 1px;
+          border: 1px solid @Pagencolor;
+        }
+      }
+      .product_price {
+        display: inline-block;
+        width: 100px;
+        float: left;
+      }
+      .old_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        padding-top: 6px;
+        color: @Pagenred;
+        text-decoration: line-through;
+      }
+      .discount_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 10px;
+        color: @Pagencolor;
+      }
+      .price_end {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .price_no_discount {
+        display: inline-block;
+        width: 100%;
+        padding-top: 18px;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .product_price_summary {
+        display: inline-block;
+        width: 110px;
+        float: left;
+      }
+    }
+    .delete_product {
+      display: inline-block;
+      float: right;
+      color: rgba(40, 40, 40, 0.4);
+      margin-right: 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(40, 40, 40, 0.4);
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 9px;
+    }
+    .delete_product:hover {
+      color: @Pagenred;
+      border: 1px solid @Pagenred;
+    }
+    .basket_delivery_block {
+      display: inline-block;
+      background: rgba(222, 224, 238, 0.5);
+      .basket_delivery_title {
+        display: inline-block;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        width: 430px;
+        padding: 5px;
+        padding-left: 91px;
+        text-align: left;
+      }
+      .basket_delivery_price {
+        display: inline-block;
+        width: 100px;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+    .basket_summary_block {
+      color: rgb(40, 40, 40);
+      .basket_summary_price {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        text-align: right;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        .basket_summary_price_title {
+          display: inline-block;
+          width: 520px;
+          float: left;
+        }
+        .basket_summary_price_value {
+          display: inline-block;
+          width: 110px;
+          float: left;
+          text-align: center;
+        }
+      }
+      .basket_summary_profit {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        font-size: 12px;
+        padding: 5px;
+        padding-top: 0px;
+        color: @Pagencolor;
+        font-weight: bold;
+        .basket_summary_profit_title {
+          display: inline-block;
+          width: 520px;
+          float: left;
+          text-align: right;
+        }
+        .basket_summary_profit_value {
+          display: inline-block;
+          float: left;
+          width: 110px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // блок
+  .order_box, .order-info {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(222, 224, 238);
+  }
+
+  //название блока
+  .block_basket_title {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: @Pagencolor;
+    padding: 15px 25px;
+    border: 1px solid @Pagencolor;
+    font-size: 18px;
+  }
+
+  .form_input_basket {
+    display: inline-block;
+    width: 31%!important;
+    border: 1px solid rgb(156, 194, 24);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .form_input_basket:first-of-type{
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .form_input_basket:nth-last-of-type(2){
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+
+  .delivery_item {
+    padding: 15px;
+    .name {
+      color: rgb(40, 40, 40);
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .paysystem_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    .check_pay_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .paysystem_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    .check_delivery_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem_delivery {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .delivery_check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .delivery_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      margin-left: 10px;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .delivery_city_select_box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    margin-bottom: 6px;
+    .delivery_city_select {
+      display: inline-block;
+      color: rgb(156, 194, 24);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .delivery_block_city {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0;
+    width: 80%;
+    .search-box {
+      display: none;
+    }
+    .delivery_search_string {
+      width: 100%;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      margin-top: 2px;
+      background: rgb(255, 255, 255);
+      border: 2px solid rgba(156, 194, 24, 0.3);
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      z-index: 10;
+      padding: 10px 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      font-size: 18px;
+      top: -6px;
+      right: -6px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      color: rgba(156, 194, 24, 1);
+      cursor: pointer;
+    }
+    .search-item {
+      padding: 5px;
+      a {
+        font-weight: bold;
+      }
+
+    }
+    .search-item:nth-child(n+2) {
+      border-top: 1px solid rgba(156, 194, 24, 0.3);
+    }
+    .search-item:hover {
+      background: rgba(156, 194, 24, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .basket_delivery_address {
+    position: relative;
+    .address_left {
+      display: inline-block;
+      float: left;
+    }
+    .address_right {
+      display: inline-block;
+      float: left;
+    }
+    .delivery_wrapper {
+      display: inline-block;
+    }
+    .address_delivery_slot {
+      width: 94px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid rgb(156, 194, 24);
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 11px;
+      margin-right: 6px;
+    }
+    .delivery_home {
+      margin-left: 15px;
+    }
+    .delivery_street {
+      width: 300px;
+      margin-left: 15px;
+      //margin-bottom: ;
+    }
+    .delivery_description_comment {
+      width: 300px;
+      height: 82px;
+      color: rgb(40, 40, 40) !important;
+      //box-sizing: border-box;
+      //display: inline-block;
+      border: 1px solid rgb(156, 194, 24) !important;
+      font-size: 14px;
+      padding: 5px 9px;
+      border-radius: 5px;
+    }
+  }
+
+  .basket_button_confirm {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .alert_element {
+    border: 1px solid @Pagenred;
+  }
+
+  .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid @Pagenred;
+    border-radius: 5px;
+    color: @Pagenred;
+    margin-right: 3px;
+  }
+
+  // страница после подтверждения заказа
+  .notetext {
+    color: rgb(40, 40, 40);
+    p {
+      display: inline-block;
+      width: 100%;
+      padding: 8px !important;
+    }
+  }
+
+  .card_payment_btn {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .card_payment_btn:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+
+  .order_avatar {
+    display: inline-block;
+    float: left;
+    border: 2px solid rgb(156, 194, 24);
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .confirm_order_chat {
+    display: inline-block;
+    width: 350px;
+    margin-top: 45px;
+    margin-left: 10px;
+    .confirm_title_chat {
+      display: inline-block;
+      width: 350px;
+      position: relative;
+      padding: 10px 20px;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+      background: rgb(156, 194, 24);
+      border-radius: 25px;
+      margin-bottom: 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        bottom: -2px;
+        left: -7px;
+        height: 20px;
+        border-left: 20px solid rgb(156, 194, 24);
+        border-bottom-right-radius: 16px 14px;
+        transform: translate(0, -2px);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        bottom: -2px;
+        left: 23px;
+        width: 7px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-bottom-right-radius: 10px;
+        transform: translate(-30px, -2px);
+      }
+    }
+  }
+
+  .products_block {
+    display: inline-block;
+    margin-top: 25px;
+    .confirm_order {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+    .confirm_sum_price {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+  }
+
+  .order_box_temp {
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid rgb(156, 194, 24);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 45px;
+    .order_title_temp {
+      position: absolute;
+      top: -30px;
+      left: 5px;
+      display: inline-block;
+      border-radius: 10px 10px 0 0;
+      background: rgb(156, 194, 24);
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      margin-top: 8px;
+      font-size: 14px;
+      .product_count {
+        display: inline-block;
+        width: 5%;
+        float: left;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .product_pic {
+        display: inline-block;
+        width: 70px;
+        float: left;
+        height: 58px;
+        img {
+          max-width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 52%;
+        float: left;
+        padding-top: 20px;
+        padding-left: 15px;
+        a {
+          text-decoration: none;
+          color: rgb(40, 40, 40);
+        }
+      }
+      .product_name:hover {
+        color: rgb(156, 194, 24);
+      }
+      .product_quantity {
+        display: inline-block;
+        width: 7%;
+        float: left;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .product_price {
+        display: inline-block;
+        width: 15%;
+        float: left;
+        padding-top: 20px;
+        text-align: center;
+      }
+    }
+    .product_item:nth-child(2n) {
+      background: rgba(40, 40, 40, 0.15);
+    }
+    .props_text{
+      margin: 10px;
+      font-size: 14px;
+    }
+  }
+  .title1_m24{
+    width: 45%!important;
+    padding-left: 5%!important;
+  }
+  .column1, .column2, .column3{
+    width: 28%!important;
+    padding-left: 5%!important;
+  }
+}
+
+/*экран 768*/
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  #spiner_modal{
+    .modal-dialog{
+      width: 50px;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:@Pagencolor;
+    }
+  }
+  // товары в корзине
+  .basket_products_box {
+    margin-top: 10px;
+    text-align: center;
+    // названия пунктов в корзине
+    .basket_product_title {
+      font-weight: bold;
+      font-size: 12px;
+      .product_title {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        padding-left: 77px;
+        width: 350px;
+      }
+      .price_one_title {
+        display: inline-block;
+        float: left;
+        width: 75px;
+      }
+      .quantity_title {
+        display: inline-block;
+        float: left;
+        width: 50px;
+      }
+      .summary_title {
+        display: inline-block;
+        float: left;
+        width: 85px;
+      }
+    }
+    .product_item:nth-of-type(2n) {
+      background: rgba(222, 224, 238, 0.5);
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      //margin-top: 2px;
+      .product_number {
+        display: inline-block;
+        width: 16px;
+        float: left;
+        font-size: 12px;
+        padding-top: 22px;
+        color: rgb(40, 40, 40);
+        text-align: center;
+        position: relative;
+      }
+      .product_img {
+        display: inline-block;
+        width: 55px;
+        float: left;
+        img {
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 45px;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 265px;
+        //max-width: 30%;
+        float: left;
+        font-size: 12px;
+        padding-top: 18px;
+        margin-left: 6px;
+        color: @Pagencolor;
+        text-decoration: none;
+        text-align: left;
+      }
+      .basket_quantity {
+        display: inline-block;
+        width: 50px;
+        float: left;
+        margin-top: 15px;
+        border-radius: 3px;
+        overflow: hidden;
+        .quantity_product_change {
+          float: left;
+          display: inline-block;
+          width: 15px;
+          height: 21px;
+          line-height: 21px;
+          background: @Pagencolor;
+          color: rgb(255, 255, 255);
+          font-size: 10px;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+        }
+        .quantity_product_field {
+          display: inline-block;
+          width: 19px;
+          height: 21px;
+          float: left;
+          text-align: center;
+          padding: 1px;
+          border: 1px solid @Pagencolor;
+        }
+      }
+      .product_price {
+        display: inline-block;
+        width: 75px;
+        float: left;
+      }
+      .old_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 11px;
+        padding-top: 6px;
+        color: @Pagenred;
+        text-decoration: line-through;
+      }
+      .discount_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 9px;
+        color: @Pagencolor;
+      }
+      .price_end {
+        display: inline-block;
+        width: 100%;
+        font-size: 11px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .price_no_discount {
+        display: inline-block;
+        width: 100%;
+        padding-top: 18px;
+        font-size: 11px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .product_price_summary {
+        display: inline-block;
+        width: 85px;
+        float: left;
+      }
+    }
+    .delete_product {
+      display: inline-block;
+      float: right;
+      color: rgba(40, 40, 40, 0.4);
+      margin-right: 10px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      border: 1px solid rgba(40, 40, 40, 0.4);
+      font-size: 12px;
+      cursor: pointer;
+      margin-top: 9px;
+    }
+    .delete_product:hover {
+      color: @Pagenred;
+      border: 1px solid @Pagenred;
+    }
+    .basket_delivery_block {
+      display: inline-block;
+      width: 100%;
+      background: rgba(222, 224, 238, 0.5);
+      .basket_delivery_title {
+        display: inline-block;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        width: 430px;
+        padding: 5px;
+        padding-left: 77px;
+        text-align: left;
+      }
+      .basket_delivery_price {
+        display: inline-block;
+        width: 85px;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 0px;
+        padding-left: 125px;
+        text-align: center;
+      }
+    }
+    .basket_summary_block {
+      display: inline-block;
+      color: rgb(40, 40, 40);
+      .basket_summary_price {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        text-align: right;
+        padding: 5px;
+        padding-left: 77px;
+        font-size: 12px;
+        font-weight: bold;
+        .basket_summary_price_title {
+          display: inline-block;
+          width: 520px;
+          float: left;
+        }
+        .basket_summary_price_value {
+          display: inline-block;
+          width: 85px;
+          float: left;
+          text-align: center;
+        }
+      }
+      .basket_summary_profit {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        font-size: 12px;
+        padding: 5px;
+        padding-top: 0px;
+        padding-left: 77px;
+        color: @Pagencolor;
+        font-weight: bold;
+        .basket_summary_profit_title {
+          display: inline-block;
+          width: 520px;
+          float: left;
+          text-align: right;
+        }
+        .basket_summary_profit_value {
+          display: inline-block;
+          float: left;
+          width: 85px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // блок
+  .order_box, .order-info {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(222, 224, 238);
+  }
+
+  //название блока
+  .block_basket_title {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: @Pagencolor;
+    padding: 15px 25px;
+    border: 1px solid @Pagencolor;
+    font-size: 18px;
+  }
+
+  .form_input_basket {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 31%!important;
+    border: 1px solid rgb(156, 194, 24);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  .form_input_basket:first-of-type{
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .form_input_basket:nth-last-of-type(2){
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+
+  .delivery_item {
+    padding: 15px;
+    .name {
+      color: rgb(40, 40, 40);
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .paysystem_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    .check_pay_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .paysystem_info {
+      display: inline-block;
+      width: 60%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_item {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+    .check_delivery_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem_delivery {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .delivery_check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .delivery_info {
+      display: inline-block;
+      width: 75%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .delivery_city_select_box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    margin-bottom: 6px;
+    .delivery_city_select {
+      display: inline-block;
+      color: rgb(156, 194, 24);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .delivery_block_city {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0;
+    width: 80%;
+    .search-box {
+      display: none;
+    }
+    .delivery_search_string {
+      width: 100%;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      margin-top: 2px;
+      background: rgb(255, 255, 255);
+      border: 2px solid rgba(156, 194, 24, 0.3);
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      z-index: 10;
+      padding: 10px 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      font-size: 18px;
+      top: -6px;
+      right: -6px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      color: rgba(156, 194, 24, 1);
+      cursor: pointer;
+    }
+    .search-item {
+      padding: 5px;
+      a {
+        font-weight: bold;
+      }
+
+    }
+    .search-item:nth-child(n+2) {
+      border-top: 1px solid rgba(156, 194, 24, 0.3);
+    }
+    .search-item:hover {
+      background: rgba(156, 194, 24, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .basket_delivery_address {
+    position: relative;
+    .address_left {
+      display: inline-block;
+      float: left;
+    }
+    .address_right {
+      display: inline-block;
+      float: left;
+    }
+    .delivery_wrapper {
+      display: inline-block;
+    }
+    .address_delivery_slot {
+      width: 94px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid rgb(156, 194, 24);
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 11px;
+      margin-right: 6px;
+    }
+    .delivery_home {
+      margin-left: 15px;
+    }
+    .delivery_street {
+      width: 300px;
+      margin-left: 15px;
+      //margin-bottom: ;
+    }
+    .delivery_description_comment {
+      box-sizing: border-box;
+      width: 300px;
+      height: 76px;
+      color: rgb(40, 40, 40) !important;
+      margin-left: 15px;
+      //box-sizing: border-box;
+      //display: inline-block;
+      border: 1px solid rgb(156, 194, 24) !important;
+      font-size: 14px;
+      padding: 5px 9px;
+      border-radius: 5px;
+    }
+  }
+
+  .basket_button_confirm {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .alert_element {
+    border: 1px solid @Pagenred;
+  }
+
+  .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid @Pagenred;
+    border-radius: 5px;
+    color: @Pagenred;
+    margin-right: 3px;
+  }
+
+  // страница после подтверждения заказа
+  .notetext {
+    color: rgb(40, 40, 40);
+    p {
+      display: inline-block;
+      width: 100%;
+      padding: 8px !important;
+    }
+  }
+
+  .card_payment_btn {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .card_payment_btn:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+  .order_avatar {
+    display: inline-block;
+    float: left;
+    border: 2px solid rgb(156, 194, 24);
+    width: 33%;
+    margin-left: 5%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 25px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .confirm_order_chat {
+    display: inline-block;
+    width: 57%;
+    margin-top: 25px;
+    margin-left: 3%;
+    .confirm_title_chat {
+      display: inline-block;
+      width: 90%;
+      position: relative;
+      padding: 8px 15px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      background: rgb(156, 194, 24);
+      border-radius: 25px;
+      margin-bottom: 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        bottom: -2px;
+        left: -7px;
+        height: 20px;
+        border-left: 20px solid rgb(156, 194, 24);
+        border-bottom-right-radius: 16px 14px;
+        transform: translate(0, -2px);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        bottom: -2px;
+        left: 23px;
+        width: 7px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-bottom-right-radius: 10px;
+        transform: translate(-30px, -2px);
+      }
+    }
+  }
+
+  .products_block {
+    display: inline-block;
+    margin-top: 25px;
+    .confirm_order {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+    .confirm_sum_price {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+  }
+
+  .order_box_temp {
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid rgb(156, 194, 24);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 45px;
+    .order_title_temp {
+      position: absolute;
+      top: -30px;
+      left: 5px;
+      display: inline-block;
+      border-radius: 10px 10px 0 0;
+      background: rgb(156, 194, 24);
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      margin-top: 8px;
+      font-size: 14px;
+      .product_count {
+        display: inline-block;
+        width: 5%;
+        float: left;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .product_pic {
+        display: inline-block;
+        width: 70px;
+        float: left;
+        height: 58px;
+        img {
+          max-width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 52%;
+        float: left;
+        padding-top: 20px;
+        padding-left: 15px;
+        a {
+          text-decoration: none;
+          color: rgb(40, 40, 40);
+        }
+      }
+      .product_name:hover {
+        color: rgb(156, 194, 24);
+      }
+      .product_quantity {
+        display: inline-block;
+        width: 7%;
+        float: left;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .product_price {
+        display: inline-block;
+        width: 15%;
+        float: left;
+        padding-top: 20px;
+        text-align: center;
+      }
+    }
+    .product_item:nth-child(2n) {
+      background: rgba(40, 40, 40, 0.15);
+    }
+    .props_text{
+      margin: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .title1_m24{
+    width: 45%!important;
+    padding-left: 5%!important;
+  }
+  .column1, .column2, .column3{
+    width: 28%!important;
+    padding-left: 5%!important;
+  }
+}
+
+/* Экран 425*/
+@media screen and (max-width: 425px) {
+  #spiner_modal{
+    .modal-dialog{
+      width: 50px;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:@Pagencolor;
+    }
+  }
+  .title_name {
+    display: inline-block;
+    padding-left: 15px;
+  }
+
+  // товары в корзине
+  .basket_products_box {
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 0px;
+    // названия пунктов в корзине
+    .basket_product_title {
+      font-weight: bold;
+      font-size: 10px;
+      .product_title {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        padding-left: 44px;
+        width: 270px;
+      }
+      .price_one_title {
+        display: none;
+      }
+      .quantity_title {
+        display: inline-block;
+        float: left;
+        width: 41px;
+      }
+      .summary_title {
+        display: inline-block;
+        float: left;
+        width: 80px;
+      }
+    }
+    .product_item:nth-of-type(2n) {
+      background: rgba(222, 224, 238, 0.5);
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      //margin-top: 2px;
+      .product_number {
+        display: none;
+      }
+      .product_img {
+        display: inline-block;
+        width: 36px;
+        float: left;
+        margin-left: 4px;
+        margin-top: 8px;
+        img {
+          width: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 30px;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 150px;
+        //max-width: 30%;
+        float: left;
+        font-size: 12px;
+        padding-top: 14px;
+        margin-left: 4px;
+        color: @Pagencolor;
+        text-decoration: none;
+        text-align: left;
+      }
+      .basket_quantity {
+        display: inline-block;
+        width: 41px;
+        float: left;
+        margin-top: 15px;
+        border-radius: 3px;
+        overflow: hidden;
+        .quantity_product_change {
+          float: left;
+          display: inline-block;
+          width: 12px;
+          height: 18px;
+          line-height: 18px;
+          background: @Pagencolor;
+          color: rgb(255, 255, 255);
+          font-size: 9px;
+          font-weight: bold;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+        }
+        .quantity_product_field {
+          display: inline-block;
+          width: 17px;
+          height: 18px;
+          font-size: 10px;
+          float: left;
+          text-align: center;
+          padding: 1px;
+          border: 1px solid @Pagencolor;
+        }
+      }
+      .product_price {
+        display: none;
+      }
+      .old_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 11px;
+        color: @Pagenred;
+        text-decoration: line-through;
+      }
+      .discount_price {
+        display: inline-block;
+        width: 100%;
+        font-size: 9px;
+        color: @Pagencolor;
+      }
+      .price_end {
+        display: inline-block;
+        width: 100%;
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .price_no_discount {
+        display: inline-block;
+        width: 100%;
+        padding-top: 18px;
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(40, 40, 40);
+      }
+      .product_price_summary {
+        display: inline-block;
+        width: 80px;
+        float: left;
+      }
+    }
+    .delete_product {
+      display: inline-block;
+      float: right;
+      color: rgba(40, 40, 40, 0.4);
+      margin-right: 4px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      border: 1px solid rgba(40, 40, 40, 0.4);
+      font-size: 12px;
+      cursor: pointer;
+      margin-top: 9px;
+    }
+    .delete_product:hover {
+      color: @Pagenred;
+      border: 1px solid @Pagenred;
+    }
+    .basket_delivery_block {
+      display: inline-block;
+      width: 100%;
+      background: rgba(222, 224, 238, 0.5);
+      .basket_delivery_title {
+        display: inline-block;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        width: 200px;
+        padding: 5px;
+        padding-left: 44px;
+        text-align: left;
+      }
+      .basket_delivery_price {
+        display: inline-block;
+        width: 80px;
+        float: left;
+        color: rgb(40, 40, 40);
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 0px;
+        padding-left: 41px;
+        text-align: center;
+      }
+    }
+    .basket_summary_block {
+      display: inline-block;
+      color: rgb(40, 40, 40);
+      .basket_summary_price {
+        display: inline-block;
+        //width: 100%;
+        float: left;
+        text-align: right;
+        padding: 5px;
+        padding-left: 44px;
+        font-size: 12px;
+        font-weight: bold;
+        .basket_summary_price_title {
+          display: inline-block;
+          width: 200px;
+          float: left;
+        }
+        .basket_summary_price_value {
+          display: inline-block;
+          width: 80px;
+          float: left;
+          text-align: center;
+        }
+      }
+      .basket_summary_profit {
+        display: inline-block;
+        //width: 100%;
+        float: left;
+        font-size: 12px;
+        padding: 5px;
+        padding-top: 0px;
+        padding-left: 44px;
+        color: @Pagencolor;
+        font-weight: bold;
+        .basket_summary_profit_title {
+          display: inline-block;
+          width: 200px;
+          float: left;
+          text-align: right;
+        }
+        .basket_summary_profit_value {
+          display: inline-block;
+          float: left;
+          width: 80px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // блок
+  .order_box, .order-info {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(222, 224, 238);
+  }
+
+  //название блока
+  .block_basket_title {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: @Pagencolor;
+    padding: 15px 25px;
+    border: 1px solid @Pagencolor;
+    font-size: 18px;
+  }
+
+  .form_input_basket {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 94%;
+    margin-left: 3%;
+    border: 1px solid rgb(156, 194, 24);
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .form_input_basket:first-of-type {
+    margin-top: 15px;
+  }
+
+  .delivery_item {
+    padding: 15px;
+    .name {
+      color: rgb(40, 40, 40);
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .paysystem_item {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    .check_pay_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .paysystem_info {
+      display: inline-block;
+      width: 57%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 12px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .delivery_item {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+    .check_delivery_item {
+      float: left;
+      margin-top: 10px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid @Pagencolor;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      margin-right: 5px;
+    }
+    .check_elem_delivery {
+      visibility: hidden;
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      border-left: 2px solid @Pagencolor;
+      border-bottom: 2px solid @Pagencolor;
+      transform: rotate(-45deg);
+    }
+    .delivery_check_elem_active {
+      visibility: visible;
+    }
+    img {
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+    }
+    .delivery_info {
+      display: inline-block;
+      width: 85%;
+      float: left;
+      .name {
+        display: inline-block;
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: bold;
+        font-size: 12px;
+      }
+      p {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .delivery_individually {
+    background: rgb(222, 224, 238);
+  }
+
+  .delivery_city_select_box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    margin-bottom: 6px;
+    .delivery_city_select {
+      display: inline-block;
+      color: rgb(156, 194, 24);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .delivery_block_city {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0;
+    width: 80%;
+    .search-box {
+      display: none;
+    }
+    .delivery_search_string {
+      width: 100%;
+      padding: 5px 20px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      margin-top: 2px;
+      background: rgb(255, 255, 255);
+      border: 2px solid rgba(156, 194, 24, 0.3);
+      box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+      z-index: 10;
+      padding: 10px 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      font-size: 18px;
+      top: -6px;
+      right: -6px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      color: rgba(156, 194, 24, 1);
+      cursor: pointer;
+    }
+    .search-item {
+      padding: 5px;
+      a {
+        font-weight: bold;
+      }
+
+    }
+    .search-item:nth-child(n+2) {
+      border-top: 1px solid rgba(156, 194, 24, 0.3);
+    }
+    .search-item:hover {
+      background: rgba(156, 194, 24, 0.3);
+      cursor: pointer;
+    }
+  }
+
+  .basket_delivery_address {
+    position: relative;
+    .address_left {
+      display: inline-block;
+      float: left;
+      width: 100%;
+    }
+    .address_right {
+      display: inline-block;
+      float: left;
+      width: 100%;
+    }
+    .delivery_wrapper {
+      display: inline-block;
+    }
+    .address_delivery_slot {
+      width: 30%;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid rgb(156, 194, 24);
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 11px;
+      margin-right: 1%;
+    }
+    .delivery_home {
+      margin-left: 3%;
+    }
+    .delivery_street {
+      width: 94%;
+      margin-left: 3%;
+      //margin-bottom: ;
+    }
+    .delivery_description_comment {
+      width: 94%;
+      height: 68px;
+      box-sizing: border-box;
+      color: rgb(40, 40, 40) !important;
+      margin-left: 3%;
+      //box-sizing: border-box;
+      //display: inline-block;
+      border: 1px solid rgb(156, 194, 24) !important;
+      font-size: 14px;
+      padding: 5px 9px;
+      border-radius: 5px;
+    }
+  }
+
+  .basket_button_confirm {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    cursor: pointer;
+  }
+
+  .alert_element {
+    border: 1px solid @Pagenred;
+  }
+
+  .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid @Pagenred;
+    border-radius: 5px;
+    color: @Pagenred;
+    margin-right: 3px;
+  }
+
+  // страница после подтверждения заказа
+  .notetext {
+    color: rgb(40, 40, 40);
+    p {
+      display: inline-block;
+      width: 100%;
+      padding: 8px !important;
+    }
+  }
+
+  .card_payment_btn {
+    display: inline-block;
+    background: rgb(234, 182, 41);
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .card_payment_btn:hover {
+    background: rgba(40, 40, 40, 0.8);
+  }
+  .order_avatar {
+    display: inline-block;
+    float: left;
+    border: 2px solid rgb(156, 194, 24);
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 7px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .confirm_order_chat {
+    display: inline-block;
+    width: 70%;
+    margin-top: 25px;
+    margin-left: 5%;
+    .confirm_title_chat {
+      display: inline-block;
+      width: 90%;
+      position: relative;
+      padding: 8px 15px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      background: rgb(156, 194, 24);
+      border-radius: 25px;
+      margin-bottom: 10px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        bottom: -2px;
+        left: -7px;
+        height: 20px;
+        border-left: 20px solid rgb(156, 194, 24);
+        border-bottom-right-radius: 16px 14px;
+        transform: translate(0, -2px);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        bottom: -2px;
+        left: 23px;
+        width: 7px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-bottom-right-radius: 10px;
+        transform: translate(-30px, -2px);
+      }
+    }
+  }
+
+  .products_block {
+    display: inline-block;
+    margin-top: 25px;
+    .confirm_order {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+    .confirm_sum_price {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      font-size: 24px;
+    }
+  }
+
+  .order_box_temp {
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid rgb(156, 194, 24);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 45px;
+    .order_title_temp {
+      position: absolute;
+      top: -30px;
+      left: 5px;
+      display: inline-block;
+      border-radius: 10px 10px 0 0;
+      background: rgb(156, 194, 24);
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    .product_item {
+      display: inline-block;
+      width: 100%;
+      margin-top: 8px;
+      font-size: 12px;
+      .product_count {
+        display: inline-block;
+        width: 5%;
+        float: left;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .product_pic {
+        display: inline-block;
+        width: 50px;
+        float: left;
+        height: 41px;
+        img {
+          max-width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .product_name {
+        display: inline-block;
+        width: 52%;
+        float: left;
+        padding-top: 10px;
+        padding-left: 15px;
+        a {
+          text-decoration: none;
+          color: rgb(40, 40, 40);
+        }
+      }
+      .product_name:hover {
+        color: rgb(156, 194, 24);
+      }
+      .product_quantity {
+        display: inline-block;
+        width: 7%;
+        float: left;
+        padding-top: 10px;
+        text-align: center;
+      }
+      .product_price {
+        display: inline-block;
+        width: 15%;
+        float: left;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+    .product_item:nth-child(2n) {
+      background: rgba(40, 40, 40, 0.15);
+    }
+    .props_text{
+      margin: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .title1_m24{
+    width: 45%!important;
+    padding-left: 5%!important;
+  }
+  .column1, .column2, .column3{
+    width: 28%!important;
+    padding-left: 5%!important;
+  }
+  .social_btn_title{
+    font-size: 14px!important;
+  }
+
+}
+
+.block_hidden {
+  display: none;
+}
+
+.orange_title{
+  background: rgb(234, 182, 41);
+  border-color:rgb(234, 182, 41);
+}

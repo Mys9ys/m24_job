@@ -1,0 +1,713 @@
+#footer {
+  height: 48px!important;
+}
+.bank_img {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid #ffffff;
+}
+.btn_wrap:hover {
+  border: 2px solid #9cc218 !important;
+}
+.btn_wrap:hover .fa {
+  color: #9cc218 !important;
+}
+@media screen and (min-width: 1234px) {
+  #footer-m24 {
+    display: inline-block;
+    width: 100%;
+    background: #ffffff;
+  }
+  #footer-m24 .footer_wrapper {
+    display: inline-block;
+    width: 1234px;
+    height: 433px;
+    background-image: url("/bitrix/components/mainpage/footer/images/footer1234.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 15px solid #9cc218;
+    padding: 25px;
+  }
+  #footer-m24 .footer_wrapper .footer_block {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_title {
+    color: #9cc218;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link .footer_yellow {
+    color: #f8d312;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover .footer_yellow {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .company_block {
+    width: 14%;
+  }
+  #footer-m24 .footer_wrapper .catalog_block {
+    width: 24%;
+  }
+  #footer-m24 .footer_wrapper .service_block {
+    width: 17%;
+  }
+  #footer-m24 .footer_wrapper .pay_block {
+    width: 20%;
+  }
+  #footer-m24 .footer_wrapper .pay_block .bank_img {
+    width: 32%;
+    border-radius: 5px;
+    margin-bottom: 2px;
+  }
+  #footer-m24 .footer_wrapper .logo_block {
+    position: relative;
+    width: 23%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img {
+    display: inline-block;
+    width: 100%;
+    padding-right: 5%;
+    cursor: pointer;
+    text-align: right;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img img {
+    width: 195px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block {
+    display: inline-block;
+    margin-left: 60px;
+    text-align: right;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market {
+    position: absolute;
+    bottom: -115px;
+    left: 15%;
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .footer_clear {
+    clear: both;
+  }
+  #footer-m24 .footer_wrapper .social_block {
+    float: left;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_title {
+    display: inline-block;
+    float: left;
+    font-size: 28px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .btn_wrap {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: center;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .fa {
+    font-size: 28px;
+    line-height: 28px;
+    margin: 5px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .politika_block {
+    float: right;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 270px;
+    text-align: right;
+  }
+  #footer-m24 .footer_wrapper .politika_block .politika_link {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+/*экран 768-1234*/
+@media screen and (min-width: 1020px) and (max-width: 1233px) {
+  #footer-m24 {
+    width: 100%;
+    background: #ffffff;
+  }
+  #footer-m24 .footer_wrapper {
+    display: inline-block;
+    width: 100%;
+    background-image: url("/bitrix/components/mainpage/footer/images/footer1234.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 15px solid #9cc218;
+    padding: 25px;
+  }
+  #footer-m24 .footer_wrapper .footer_block {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_title {
+    color: #9cc218;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link .footer_yellow {
+    color: #f8d312;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover .footer_yellow {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .company_block {
+    width: 14%;
+  }
+  #footer-m24 .footer_wrapper .catalog_block {
+    width: 24%;
+  }
+  #footer-m24 .footer_wrapper .service_block {
+    width: 17%;
+  }
+  #footer-m24 .footer_wrapper .pay_block {
+    width: 20%;
+  }
+  #footer-m24 .footer_wrapper .pay_block .bank_img {
+    width: 32%;
+    border-radius: 5px;
+    margin-bottom: 2px;
+  }
+  #footer-m24 .footer_wrapper .logo_block {
+    position: relative;
+    width: 25%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img {
+    display: inline-block;
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block {
+    display: inline-block;
+    margin-left: 60px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market {
+    position: absolute;
+    bottom: -115px;
+    left: 15%;
+    width: 80%;
+    text-decoration: none;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .footer_clear {
+    clear: both;
+  }
+  #footer-m24 .footer_wrapper .social_block {
+    float: left;
+    display: inline-block;
+    margin-top: 35px;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_title {
+    display: inline-block;
+    float: left;
+    font-size: 28px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .btn_wrap {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: center;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .fa {
+    font-size: 28px;
+    line-height: 28px;
+    margin: 5px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .politika_block {
+    float: right;
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 20px;
+    text-align: right;
+  }
+  #footer-m24 .footer_wrapper .politika_block .politika_link {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+/*экран 768*/
+@media screen and (min-width: 769px) and (max-width: 1019px) {
+  #footer-m24 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+  }
+  #footer-m24 .footer_wrapper {
+    display: inline-block;
+    width: 100%;
+    background-image: url("/bitrix/components/mainpage/footer/images/footer1234.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 15px solid #9cc218;
+    padding: 25px;
+  }
+  #footer-m24 .footer_wrapper .footer_block {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_title {
+    color: #9cc218;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link .footer_yellow {
+    color: #f8d312;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover .footer_yellow {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .company_block {
+    width: 20%;
+  }
+  #footer-m24 .footer_wrapper .catalog_block {
+    width: 30%;
+  }
+  #footer-m24 .footer_wrapper .service_block {
+    width: 25%;
+  }
+  #footer-m24 .footer_wrapper .pay_block {
+    width: 25%;
+  }
+  #footer-m24 .footer_wrapper .pay_block .bank_img {
+    width: 32%;
+    border-radius: 5px;
+    margin-bottom: 2px;
+  }
+  #footer-m24 .footer_wrapper .logo_block {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img {
+    display: inline-block;
+    width: 25%;
+    float: left;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block {
+    display: inline-block;
+    float: right;
+    width: 33%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block .chat_m24_wrap {
+    float: right;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market {
+    display: inline-block;
+    float: left;
+    width: 42%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market img {
+    width: 60%;
+  }
+  #footer-m24 .footer_wrapper .footer_clear {
+    clear: both;
+  }
+  #footer-m24 .footer_wrapper .social_block {
+    width: 55%;
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_title {
+    display: block;
+    font-size: 28px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon {
+    display: block;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .btn_wrap {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: center;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .fa {
+    font-size: 28px;
+    line-height: 28px;
+    margin: 5px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .politika_block {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    display: inline-block;
+    text-align: right;
+  }
+  #footer-m24 .footer_wrapper .politika_block .politika_link {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+/*экран 768*/
+@media screen and (min-width: 620px) and (max-width: 768px) {
+  #footer-m24 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+  }
+  #footer-m24 .footer_wrapper {
+    display: inline-block;
+    width: 100%;
+    background-image: url("/bitrix/components/mainpage/footer/images/footer1234.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 15px solid #9cc218;
+    padding: 25px;
+  }
+  #footer-m24 .footer_wrapper .footer_block {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_title {
+    color: #9cc218;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link .footer_yellow {
+    color: #f8d312;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover .footer_yellow {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .company_block {
+    width: 20%;
+  }
+  #footer-m24 .footer_wrapper .catalog_block {
+    width: 30%;
+  }
+  #footer-m24 .footer_wrapper .service_block {
+    width: 25%;
+  }
+  #footer-m24 .footer_wrapper .pay_block {
+    width: 25%;
+  }
+  #footer-m24 .footer_wrapper .pay_block .bank_img {
+    width: 32%;
+    border-radius: 5px;
+    margin-bottom: 2px;
+  }
+  #footer-m24 .footer_wrapper .logo_block {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img {
+    display: inline-block;
+    width: 25%;
+    float: left;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block {
+    display: inline-block;
+    float: right;
+    width: 33%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block .chat_m24_wrap {
+    float: right;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market {
+    display: inline-block;
+    float: left;
+    width: 42%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market img {
+    width: 60%;
+  }
+  #footer-m24 .footer_wrapper .footer_clear {
+    clear: both;
+  }
+  #footer-m24 .footer_wrapper .social_block {
+    width: 55%;
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_title {
+    display: block;
+    font-size: 28px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon {
+    display: block;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .btn_wrap {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: center;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .fa {
+    font-size: 28px;
+    line-height: 28px;
+    margin: 5px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .politika_block {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    display: inline-block;
+    text-align: right;
+  }
+  #footer-m24 .footer_wrapper .politika_block .politika_link {
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+  }
+}
+/* Экран 425*/
+@media screen and (max-width: 619px) {
+  #footer-m24 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+  }
+  #footer-m24 .footer_wrapper {
+    display: inline-block;
+    width: 100%;
+    background-image: url("/bitrix/components/mainpage/footer/images/footer_mob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 5px solid #9cc218;
+    padding: 3px;
+  }
+  #footer-m24 .footer_wrapper .footer_block {
+    display: inline-block;
+    float: left;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_title {
+    color: #9cc218;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link {
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link .footer_yellow {
+    color: #f8d312;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .footer_block .footer_link:hover .footer_yellow {
+    color: #9cc218;
+  }
+  #footer-m24 .footer_wrapper .company_block {
+    width: 33%;
+  }
+  #footer-m24 .footer_wrapper .catalog_block {
+    width: 33%;
+  }
+  #footer-m24 .footer_wrapper .service_block {
+    width: 33%;
+  }
+  #footer-m24 .footer_wrapper .pay_block {
+    width: 50%;
+  }
+  #footer-m24 .footer_wrapper .pay_block .bank_img {
+    width: 32%;
+    border-radius: 5px;
+    margin-bottom: 2px;
+  }
+  #footer-m24 .footer_wrapper .logo_block {
+    position: relative;
+    width: 50%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img {
+    display: inline-block;
+    width: 90%;
+    float: left;
+    cursor: pointer;
+  }
+  #footer-m24 .footer_wrapper .logo_block .logo_img img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .chat_block {
+    display: inline-block;
+    width: 100%;
+    padding-left: 15%;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market {
+    display: inline-block;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 7px;
+  }
+  #footer-m24 .footer_wrapper .logo_block .ya_market img {
+    width: 100%;
+  }
+  #footer-m24 .footer_wrapper .footer_clear {
+    clear: both;
+  }
+  #footer-m24 .footer_wrapper .social_block {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_title {
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon {
+    display: block;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .btn_wrap {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: center;
+  }
+  #footer-m24 .footer_wrapper .social_block .social_icon .fa {
+    font-size: 28px;
+    line-height: 28px;
+    margin: 5px;
+    color: #ffffff;
+  }
+  #footer-m24 .footer_wrapper .politika_block {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: right;
+    margin-top: 10px;
+  }
+  #footer-m24 .footer_wrapper .politika_block .politika_link {
+    display: block;
+    color: #ffffff;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

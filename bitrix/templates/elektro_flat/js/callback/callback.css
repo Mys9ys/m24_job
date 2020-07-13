@@ -1,0 +1,300 @@
+.grcb_widget {
+	padding:0px;
+	position: fixed;
+    bottom: 100px;
+    right: 17px;
+	width:70px;
+	height:70px;
+	line-height:70px;
+	text-align:center;
+	background-color:rgba(0, 175, 242, 0);
+    z-index: 2147483647;
+	border-radius:50%;
+}
+.grcb-policy {
+	transform: scale(1.5);
+	margin-top: 13px;
+	margin-left: 13px;
+        -webkit-appearance: checkbox;
+        appearance: checkbox;
+}
+.grcb_form .grcb_hint {
+	position:absolute;
+	right: 0;
+	width: 228px;
+	color:#333;
+	text-shadow:0 0 5px #fff;
+        font-size:12px;
+	font-weight: 700;
+	text-align: center;
+	padding: 5px;
+	background-color: #b5ebff;
+	border-radius: 10px;
+	height: 44px;
+        overflow: hidden;
+}
+
+.grcb_widget.active {
+	animation-name:bgblink;
+	animation-duration:5s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+}
+.grcb_widget:after {
+	width: 70px;
+        height: 70px;
+        position:relative;
+        display:inline-block;
+        border-radius: 50%;
+        background-color: rgba(0, 175, 242, 1);
+	font-size:36px;
+	color:#fff;
+	text-align:center;
+	line-height:70px;
+	cursor:pointer;
+	font-family: FontAwesome;
+	content: "\f2a0";
+	box-shadow: 0 0 30px #777;
+}
+.grcb_form {
+	position:fixed;
+	bottom:100px;
+	right:17px;
+	border:1px solid rgba(0, 175, 242, 1);
+	border-radius:70px;
+	width:70px;
+	height:70px;
+	display:none;
+	color:#fff;
+	z-index:2147483647;
+}
+.grcb_form.active {
+	display:block;
+	animation-name:formslide;
+	animation-duration:1s;
+	animation-direction:normal;
+	animation-fill-mode:forwards;
+	background-color:rgba(181, 235, 255, 0.9);
+	box-shadow: 0 0 15px #000;
+}
+.grcb_form.collapse {
+	display:block;
+	animation-name:formcollapse;
+	animation-duration:1s;
+	animation-direction:normal;
+	animation-fill-mode:forwards;
+	background-color:rgba(181, 235, 255, 0.9);
+	overflow:hidden;
+}
+
+.grcb_form.timer {
+	animation-name:timing1;
+	animation-duration:30s;
+	animation-direction:normal;
+	animation-timing-function:linear;
+	animation-fill-mode:forwards;
+}
+
+.grcb_makecall {
+    height: 60px;
+    vertical-align: top;
+    background-color: rgba(0, 175, 242, 1);
+    line-height: 18px;
+    width: 18%;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+}
+
+.grcb_form.timer>div {
+	animation-name:timing2;
+	animation-duration:30s;
+	animation-direction:normal;
+	animation-timing-function:linear;
+	animation-fill-mode:forwards;
+}
+
+.grcb_counter {
+	display: inline-block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 64px;
+    transform: rotate(-45deg);
+}
+
+.grcb_field {
+	text-align: center;
+    background-color: rgba(255,255,255, 1);
+    height: 25px;
+    width: 66%;
+    margin-top: 6px;
+    margin-left: 10%;
+    border: 0;
+    font-size: 14px;
+    font-family: Open sans;
+    padding-left: 3px;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding-right: 8px;
+}
+
+@keyframes timing1 {
+	1% {
+		border-top:3px solid transparent;
+	}
+	24% {
+		border-right:3px solid rgb(255,255,255);
+	}
+	25% {
+		border-right:3px solid transparent;
+	}
+	49% {
+		border-bottom:3px solid rgb(255,255,255);
+	}
+	50% {
+		border-bottom:3px solid transparent;
+	}
+	74% {
+		border-left:3px solid rgb(255,255,255);
+	}
+	75% {
+		border-left:3px solid rgb(255,255,255);
+	}
+	99% {
+		border: 3px solid transparent;
+		border-left:3px solid rgb(255,255,255);
+	}
+	100% {
+		border: 3px solid transparent;
+		border-left:3px solid rgb(255,255,255);
+	}
+}
+
+@keyframes timing2 {
+	1% {
+		border-top:3px solid rgb(255,255,255);
+		border-right:3px solid rgb(255,255,255);
+		border-bottom:3px solid rgb(255,255,255);
+		border-left:3px solid transparent;
+	}
+	24% {
+		transform:rotate(90deg);
+		border-top:3px solid rgb(255,255,255);
+		border-right:3px solid rgb(255,255,255);
+		border-bottom:3px solid rgb(255,255,255);
+		border-left:3px solid transparent;
+	}
+	25% {
+		border-top:3px solid rgb(255,255,255);
+		border-right:3px solid rgb(255,255,255);
+		border-bottom:3px solid transparent;
+		border-left:3px solid transparent;
+	}
+	49% {
+		transform:rotate(180deg);
+		border-top:3px solid rgb(255,255,255);
+		border-right:3px solid rgb(255,255,255);
+		border-bottom:3px solid transparent;
+		border-left:3px solid transparent;
+	}
+	50% {
+		border-top:3px solid rgb(255,255,255);
+		border-right:3px solid transparent;
+		border-bottom:3px solid transparent;
+		border-left:3px solid transparent;
+	}
+	74% {
+		transform:rotate(270deg);
+		border-top:3px solid rgb(255,255,255);
+		border-right:3px solid transparent;
+		border-bottom:3px solid transparent;
+		border-left:3px solid transparent;
+	}
+	75% {
+		border-top:3px solid transparent;
+		border-right:3px solid transparent;
+		border-bottom:3px solid transparent;
+		border-left:3px solid rgb(181, 235, 255);
+	}
+	99% {
+		transform:rotate(360deg);
+		border-top:3px solid transparent;
+		border-right:3px solid transparent;
+		border-bottom:3px solid transparent;
+		border-left:3px solid rgb(181, 235, 255);
+	}
+	100% {
+		transform:rotate(360deg);
+		border-top:3px solid transparent;
+		border-right:3px solid transparent;
+		border-bottom:3px solid transparent;
+		border-left:3px solid rgb(181, 235, 255);
+	}
+}
+
+@keyframes formslide {
+	1% {
+		width:70px;
+	}
+	100% {
+		width:230px;
+	}
+}
+
+@keyframes formcollapse {
+	1% {
+		width:230px;
+		transform:rotate(0deg);
+	}
+	99% {
+		width:70px;
+		transform:rotate(0deg);
+	}
+	100% {
+		width:70px;
+		transform:rotate(45deg);
+	}
+}
+
+@keyframes bgblink {
+	1% {
+		background-color:rgba(181, 235, 255, 0);
+		width:70px;
+		height:70px;
+		bottom:100px;
+		right:17px;
+		padding:0;
+	}
+	10% {
+		background-color:rgba(181, 235, 255, 0.5);
+		width:100px;
+		height:100px;
+		bottom:85px;
+		right:2px;
+		padding:15px;
+	}
+	20% {
+		background-color:rgba(181, 235, 255, 0);
+		width:130px;
+		height:130px;
+		bottom:70px;
+		right:-13px;
+		padding:30px;
+	}
+	21% {
+		background-color:rgba(181, 235, 255, 0);
+		width:70px;
+		height:70px;
+		bottom:100px;
+		right:17px;
+		padding:0;
+	}
+	100% {
+
+	}
+}

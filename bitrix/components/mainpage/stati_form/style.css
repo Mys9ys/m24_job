@@ -1,0 +1,862 @@
+.btn_confirm {
+  border: none;
+  box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+}
+.btn_confirm:active {
+  box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+}
+.inactiveCheck {
+  background: #82a115 !important;
+}
+.banner_icon img {
+  margin: 0!important;
+}
+@media screen and (min-width: 1234px) {
+  .stati_banner_box {
+    position: relative;
+    padding: 20px;
+    border: 3px solid #9cc218;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 800px;
+  }
+  .stati_banner_box .block_left {
+    display: inline-block;
+    float: left;
+    position: relative;
+  }
+  .stati_banner_box .block_left .banner_icon {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid #9cc218;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .stati_banner_box .block_left .banner_icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .stati_banner_box .block_left .banner_number {
+    text-align: center;
+    width: 120px;
+    position: relative;
+    z-index: 2;
+    color: #9cc218;
+    font-size: 140px;
+    line-height: 140px;
+    font-weight: bold;
+  }
+  .stati_banner_box .block_left .banner_on_line {
+    position: absolute;
+    top: 0px;
+    left: 115px;
+    display: inline-block;
+    color: #9cc218;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(to top, #48556c 0%, #1b212b 40%, #141922 60%, #353b45 100%);
+    /*Standard*/
+    border-radius: 5px;
+  }
+  .stati_banner_box .block_right {
+    display: inline-block;
+    float: left;
+    width: 75%;
+    position: relative;
+    margin-left: 15px;
+  }
+  .stati_banner_box .block_right .banner_title_preview {
+    margin-top: 10px;
+    color: #9cc218;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .stati_banner_box .block_right .banner_title_end {
+    margin-top: 10px;
+    color: #282828;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .stati_banner_box .social_block .banner_title_end {
+    float: left;
+    width: 55%;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .stati_banner_box .social_block .banner_form_block {
+    float: left;
+    max-width: 210px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .stati_banner_box .user_info_confirm {
+    display: inline-block;
+    margin-left: 90px;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr .imitate_check_bnr {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  .stati_banner_box .user_info_confirm label {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .stati_banner_box .user_info_confirm label a {
+    color: #ff4e33 !important;
+  }
+  .stati_banner_box .validate_input {
+    display: inline-block;
+    width: 200px;
+    margin-left: 1%;
+    border: 1px solid #9cc218;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  }
+  .stati_banner_box .btn_confirm {
+    display: inline-block;
+    background: #eab629;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .stati_banner_box .alert_element {
+    border: 1px solid #ff6347;
+  }
+  .stati_banner_box .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    color: #ff6347;
+    margin-right: 3px;
+  }
+  .stati_banner_box .img_over {
+    width: 200px;
+    position: absolute;
+    top: -95px;
+    left: -65px;
+  }
+  .banner_margin {
+    margin-top: 75px;
+  }
+}
+/*экран 768-1234*/
+@media screen and (min-width: 768px) and (max-width: 1233px) {
+  .stati_banner_box {
+    position: relative;
+    padding: 20px;
+    border: 3px solid #9cc218;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 650px;
+  }
+  .stati_banner_box .social_block .banner_title_end {
+    float: left;
+    width: 55%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .stati_banner_box .social_block .banner_form_block {
+    float: left;
+    max-width: 210px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .stati_banner_box .block_left {
+    display: inline-block;
+    float: left;
+    position: relative;
+  }
+  .stati_banner_box .block_left .banner_icon {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid #9cc218;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .stati_banner_box .block_left .banner_icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .stati_banner_box .block_left .banner_number {
+    text-align: center;
+    width: 120px;
+    position: relative;
+    z-index: 2;
+    color: #9cc218;
+    font-size: 140px;
+    font-weight: bold;
+  }
+  .stati_banner_box .block_left .banner_on_line {
+    position: absolute;
+    top: 0px;
+    left: 115px;
+    display: inline-block;
+    color: #9cc218;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(to top, #48556c 0%, #1b212b 40%, #141922 60%, #353b45 100%);
+    /*Standard*/
+    border-radius: 5px;
+  }
+  .stati_banner_box .block_right {
+    display: inline-block;
+    float: left;
+    width: 75%;
+    position: relative;
+    margin-left: 15px;
+  }
+  .stati_banner_box .block_right .banner_title_preview {
+    margin-top: 30px;
+    color: #9cc218;
+    font-size: 18px;
+  }
+  .stati_banner_box .block_right .banner_title_end {
+    margin-top: 10px;
+    color: #282828;
+    font-size: 16px;
+  }
+  .stati_banner_box .user_info_confirm {
+    display: inline-block;
+    margin-left: 90px;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr .imitate_check_bnr {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  .stati_banner_box .user_info_confirm label {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .stati_banner_box .user_info_confirm label a {
+    color: #ff4e33 !important;
+  }
+  .stati_banner_box .validate_input {
+    display: inline-block;
+    width: 200px;
+    margin-left: 1%;
+    border: 1px solid #9cc218;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  }
+  .stati_banner_box .btn_confirm {
+    display: inline-block;
+    background: #eab629;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .stati_banner_box .alert_element {
+    border: 1px solid #ff6347;
+  }
+  .stati_banner_box .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    color: #ff6347;
+    margin-right: 3px;
+  }
+  .stati_banner_box .img_over {
+    width: 200px;
+    position: absolute;
+    top: -95px;
+    left: -65px;
+  }
+  .banner_margin {
+    margin-top: 75px;
+  }
+}
+/*экран 768*/
+@media screen and (min-width: 620px) and (max-width: 768px) {
+  .stati_banner_box {
+    position: relative;
+    padding: 8px;
+    border: 3px solid #9cc218;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 530px;
+  }
+  .stati_banner_box .social_block {
+    display: inline-block;
+    width: 400px;
+  }
+  .stati_banner_box .social_block .banner_title_end {
+    float: left;
+    width: 185px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .stati_banner_box .social_block .banner_form_block {
+    float: left;
+    max-width: 210px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .stati_banner_box .block_left {
+    display: inline-block;
+    float: left;
+    position: relative;
+  }
+  .stati_banner_box .block_left .banner_icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid #9cc218;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .stati_banner_box .block_left .banner_icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .stati_banner_box .block_left .banner_number {
+    text-align: center;
+    width: 70px;
+    position: relative;
+    z-index: 2;
+    color: #9cc218;
+    font-size: 110px;
+    line-height: 110px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  .stati_banner_box .block_left .banner_on_line {
+    position: absolute;
+    top: 0px;
+    left: 115px;
+    display: inline-block;
+    color: #9cc218;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(to top, #48556c 0%, #1b212b 40%, #141922 60%, #353b45 100%);
+    /*Standard*/
+    border-radius: 5px;
+  }
+  .stati_banner_box .block_right {
+    display: inline-block;
+    float: left;
+    width: 75%;
+    position: relative;
+    margin-left: 15px;
+  }
+  .stati_banner_box .block_right .banner_title_preview {
+    color: #9cc218;
+    font-size: 18px;
+  }
+  .stati_banner_box .block_right .banner_title_end {
+    margin-top: 10px;
+    color: #282828;
+    font-size: 14px;
+  }
+  .stati_banner_box .user_info_confirm {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr .imitate_check_bnr {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  .stati_banner_box .user_info_confirm label {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .stati_banner_box .user_info_confirm label a {
+    color: #ff4e33 !important;
+  }
+  .stati_banner_box .validate_input {
+    display: inline-block;
+    width: 180px;
+    margin-left: 1%;
+    border: 1px solid #9cc218;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  }
+  .stati_banner_box .btn_confirm {
+    display: inline-block;
+    background: #eab629;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .stati_banner_box .alert_element {
+    border: 1px solid #ff6347;
+  }
+  .stati_banner_box .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    color: #ff6347;
+    margin-right: 3px;
+  }
+  .stati_banner_box .img_over {
+    width: 150px;
+    position: absolute;
+    top: -70px;
+    left: -50px;
+  }
+  .banner_margin {
+    margin-top: 75px;
+  }
+}
+/* Экран 425*/
+@media screen and (min-width: 426px) and (max-width: 619px) {
+  .stati_banner_box {
+    position: relative;
+    padding: 15px;
+    border: 3px solid #9cc218;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 390px;
+  }
+  .stati_banner_box .social_block {
+    display: inline-block;
+    width: 100%;
+  }
+  .stati_banner_box .social_block .banner_title_end {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .stati_banner_box .social_block .banner_form_block {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .stati_banner_box .block_left {
+    display: inline-block;
+    float: left;
+    position: relative;
+  }
+  .stati_banner_box .block_left .banner_icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid #9cc218;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .stati_banner_box .block_left .banner_icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .stati_banner_box .block_left .banner_number {
+    text-align: center;
+    width: 70px;
+    position: relative;
+    z-index: 2;
+    color: #9cc218;
+    font-size: 110px;
+    line-height: 110px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  .stati_banner_box .block_left .banner_on_line {
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    display: inline-block;
+    color: #9cc218;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(to top, #48556c 0%, #1b212b 40%, #141922 60%, #353b45 100%);
+    /*Standard*/
+    border-radius: 5px;
+  }
+  .stati_banner_box .block_right {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-left: 5%;
+    width: 65%;
+  }
+  .stati_banner_box .block_right .banner_title_preview {
+    width: 100%;
+    color: #9cc218;
+    font-size: 14px;
+  }
+  .stati_banner_box .block_right .banner_title_end {
+    width: 100%;
+    margin-top: 10px;
+    color: #282828;
+    font-size: 12px;
+  }
+  .stati_banner_box .user_info_confirm {
+    display: inline-block;
+    margin-left: 5%;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr .imitate_check_bnr {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  .stati_banner_box .user_info_confirm label {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .stati_banner_box .user_info_confirm label a {
+    color: #ff4e33 !important;
+  }
+  .stati_banner_box .validate_input {
+    display: inline-block;
+    width: 80%;
+    margin-left: 1%;
+    border: 1px solid #9cc218;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  }
+  .stati_banner_box .btn_confirm {
+    display: inline-block;
+    background: #eab629;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-left: 45%;
+    text-align: center;
+  }
+  .stati_banner_box .alert_element {
+    border: 1px solid #ff6347;
+  }
+  .stati_banner_box .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    color: #ff6347;
+    margin-right: 3px;
+  }
+  .stati_banner_box .img_over {
+    width: 150px;
+    position: absolute;
+    top: -70px;
+    left: -50px;
+  }
+  .banner_margin {
+    margin-top: 75px;
+  }
+}
+/* Экран 425*/
+@media screen and (max-width: 425px) {
+  .stati_banner_box {
+    position: relative;
+    padding: 7px;
+    border: 3px solid #9cc218;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .stati_banner_box .block_left {
+    display: inline-block;
+    float: left;
+    position: relative;
+  }
+  .stati_banner_box .block_left .banner_icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid #9cc218;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .stati_banner_box .block_left .banner_icon img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .stati_banner_box .block_left .banner_number {
+    text-align: center;
+    width: 45px;
+    position: relative;
+    z-index: 2;
+    color: #9cc218;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  .stati_banner_box .block_left .banner_on_line {
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    display: inline-block;
+    color: #9cc218;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(to top, #48556c 0%, #1b212b 40%, #141922 60%, #353b45 100%);
+    /*Standard*/
+    border-radius: 5px;
+  }
+  .stati_banner_box .block_right {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-left: 5%;
+    width: 65%;
+  }
+  .stati_banner_box .block_right .banner_title_preview {
+    width: 100%;
+    color: #9cc218;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .stati_banner_box .block_right .banner_title_end {
+    position: relative;
+    left: -20%;
+    width: 135%;
+    margin-top: 10px;
+    color: #282828;
+    font-size: 12px;
+  }
+  .stati_banner_box .social_block {
+    display: inline-block;
+    width: 140%;
+  }
+  .stati_banner_box .social_block .banner_title_end {
+    left: 0%;
+    float: left;
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .stati_banner_box .social_block .banner_form_block {
+    left: 0%;
+    float: left;
+    width: 100%;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .stati_banner_box .Email_form {
+    position: relative;
+    left: -20%;
+    width: 135%;
+  }
+  .stati_banner_box .user_info_confirm {
+    display: inline-block;
+    margin-left: 5%;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  .stati_banner_box .user_info_confirm .checkbox_imitate_bnr .imitate_check_bnr {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  .stati_banner_box .user_info_confirm label {
+    display: inline-block;
+    width: 80%;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: rgba(40, 40, 40, 0.5);
+  }
+  .stati_banner_box .user_info_confirm label a {
+    color: #ff4e33 !important;
+  }
+  .stati_banner_box .validate_input {
+    display: inline-block;
+    width: 90%;
+    margin-left: 1%;
+    border: 1px solid #9cc218;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  }
+  .stati_banner_box .btn_confirm {
+    display: inline-block;
+    background: #eab629;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-left: 45%;
+    text-align: center;
+  }
+  .stati_banner_box .alert_element {
+    border: 1px solid #ff6347;
+  }
+  .stati_banner_box .alert_message {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ff6347;
+    border-radius: 5px;
+    color: #ff6347;
+    margin-right: 3px;
+  }
+  .stati_banner_box .img_over {
+    width: 150px;
+    position: absolute;
+    top: -70px;
+    left: -50px;
+  }
+  .banner_margin {
+    margin-top: 75px;
+  }
+}

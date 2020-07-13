@@ -1,0 +1,111 @@
+@keyframes upper {
+  1%{
+    opacity:.99;
+  }
+  100%{
+    opacity:0.01;
+  }
+}
+.block_up{
+  display: none;
+  z-index: 500;
+}
+@media screen and (min-width: 862px) {
+  .block_up{
+    position: fixed;
+    left: 0;
+    top:0;
+    padding-top: 35px;
+    background: rgba(156, 194, 24, 0.4);
+  }
+  .block_up:hover{
+    background: rgba(156, 194, 24, 0.75);
+  }
+  .up_icon{
+    padding: 10px;
+    height: 100vh;
+    width: 25px;
+    box-sizing: content-box;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    .line{
+      position: absolute;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border-top: 4px solid rgba(40, 40, 40, 0.8);
+      border-right: 4px solid rgba(40, 40, 40, 0.8);
+      transform: rotate(-45deg);
+      opacity:0.01;
+    }
+    .line1{
+      top:0;
+      animation: upper 1s 1s linear infinite;
+    }
+    .line2{
+      top:10px;
+      animation: upper 1s 0.75s linear infinite;
+    }
+    .line3{
+      top:20px;
+      animation: upper 1s 0.5s linear infinite;
+    }
+    .line4{
+      top:30px;
+      animation: upper 1s 0.25s linear infinite;
+    }
+  }
+}
+
+/*экран 768-1013*/
+@media screen and (min-width:300px) and (max-width:861px){
+  .block_up{
+    position: fixed;
+    left: 0;
+    bottom:50px;
+    //background: rgba(40, 40, 40, 0.2);
+    background: rgba(29, 161, 242, 0.45);
+    border-top:1px solid rgb(29, 161, 242);
+    border-right:1px solid rgb(29, 161, 242);
+    border-radius: 0 5px 0 0;
+  }
+  .block_up:hover{
+    background: rgba(29, 161, 242, 0.75);
+  }
+  .up_icon{
+    padding: 20px;
+    height: 18px;
+    width: 18px;
+    box-sizing: content-box;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    .line{
+      position: absolute;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-top: 4px solid rgba(40, 40, 40, 0.8);
+      border-right: 4px solid rgba(40, 40, 40, 0.8);
+      transform: rotate(-45deg);
+      opacity:0.01;
+    }
+    .line1{
+      top:10px;
+      animation: upper 1s 1s linear infinite;
+    }
+    .line2{
+      top:20px;
+      animation: upper 1s 0.75s linear infinite;
+    }
+    .line3{
+      top:30px;
+      animation: upper 1s 0.5s linear infinite;
+    }
+    .line4{
+      top:40px;
+      animation: upper 1s 0.25s linear infinite;
+    }
+  }
+}

@@ -1,0 +1,354 @@
+.inactiveCheck {
+  background: #82a115 !important;
+}
+.subscribe-button {
+  border: none;
+}
+.alert_element {
+  border: 1px solid #a94442 !important;
+  background: #ebccd1;
+}
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+}
+.subscribe-confirm-text {
+  color: #282828;
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.subscribe-confirm-code {
+  padding: 8px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.subscribe-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background: #9cc218;
+  font-size: 1em;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (min-width: 1234px) {
+  #subscribe-block {
+    margin-top: 25px;
+    width: 100%;
+    height: 145px;
+    background-color: #9cc218;
+  }
+  #subscribe-block .left-block {
+    float: left;
+    width: 45%;
+    padding-left: 240px;
+  }
+  #subscribe-block .left-block .title-subscribe {
+    padding-top: 40px;
+    font-size: 30px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .left-block .text-subscribe {
+    padding-top: 10px;
+    width: 250px;
+    font-size: 14px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .right-block {
+    width: 55%;
+    float: right;
+    padding-top: 40px;
+  }
+  #subscribe-block .right-block .subscribe-email {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  #subscribe-block .right-block .subscribe-button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #a5a5a5;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    color: #ffffff;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  #subscribe-block .right-block .checkbox-imitate {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate .imitate-check {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent a {
+    color: #ffffff !important;
+  }
+}
+/*экран 768-1234*/
+@media screen and (min-width: 768px) and (max-width: 1233px) {
+  #subscribe-block {
+    margin-top: 25px;
+    width: 100%;
+    height: 145px;
+    background-color: #9cc218;
+  }
+  #subscribe-block .left-block {
+    float: left;
+    width: 45%;
+    padding-left: 50px;
+  }
+  #subscribe-block .left-block .title-subscribe {
+    padding-top: 40px;
+    font-size: 30px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .left-block .text-subscribe {
+    padding-top: 10px;
+    width: 250px;
+    font-size: 14px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .right-block {
+    width: 55%;
+    float: right;
+    padding-top: 40px;
+    padding-left: 50px;
+  }
+  #subscribe-block .right-block .subscribe-email {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  #subscribe-block .right-block .subscribe-button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #a5a5a5;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    color: #ffffff;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate .imitate-check {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent a {
+    color: #ffffff !important;
+  }
+}
+/*экран 768*/
+@media screen and (min-width: 620px) and (max-width: 768px) {
+  #subscribe-block {
+    margin-top: 25px;
+    width: 100%;
+    height: 145px;
+    background-color: #9cc218;
+  }
+  #subscribe-block .left-block {
+    float: left;
+    width: 45%;
+    padding-left: 3%;
+  }
+  #subscribe-block .left-block .title-subscribe {
+    padding-top: 40px;
+    font-size: 30px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .left-block .text-subscribe {
+    padding-top: 10px;
+    width: 250px;
+    font-size: 14px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .right-block {
+    width: 55%;
+    float: right;
+    padding-top: 40px;
+    padding-left: 3%;
+  }
+  #subscribe-block .right-block .subscribe-email {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  #subscribe-block .right-block .subscribe-button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #a5a5a5;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    color: #ffffff;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate .imitate-check {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent a {
+    color: #ffffff !important;
+  }
+}
+/* Экран 425*/
+@media screen and (max-width: 619px) {
+  #subscribe-block {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #9cc218;
+  }
+  #subscribe-block .left-block {
+    width: 100%;
+    padding-left: 4%;
+  }
+  #subscribe-block .left-block .title-subscribe {
+    padding-top: 20px;
+    font-size: 28px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .left-block .text-subscribe {
+    padding-top: 10px;
+    width: 50%;
+    font-size: 12px;
+    color: #fefefe;
+    line-height: 1.2;
+  }
+  #subscribe-block .right-block {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 4%;
+  }
+  #subscribe-block .right-block .subscribe-email {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  #subscribe-block .right-block .subscribe-button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #a5a5a5;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    color: #ffffff;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #82a115;
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor: pointer;
+  }
+  #subscribe-block .right-block .checkbox-imitate .imitate-check {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  #subscribe-block .right-block .subscribe-consent a {
+    color: #ffffff !important;
+  }
+}

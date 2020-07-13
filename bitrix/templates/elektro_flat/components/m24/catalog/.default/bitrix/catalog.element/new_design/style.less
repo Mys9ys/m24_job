@@ -1,0 +1,3501 @@
+#workarea{
+  display: inline-block;
+  width: 100% !important;
+}
+/* 425 Блок отображение видео */
+.modal-video {
+  width: 900px;
+  max-width: 100%;
+  height: 510px;
+  margin: auto;
+}
+
+
+.catalog-detail {
+  display: block;
+}
+
+#Dtab1 {
+  display: block;
+}
+.attention_block_text{
+  display: inline-block;
+  color: rgb(40,40,40);
+  padding: 5px;
+  span{
+  color:rgb(255, 99, 71);
+  }
+}
+
+.shops_on_the_map {
+  color: rgb(44, 44, 44);
+}
+
+.small_banner_container {
+  max-width: 100%;
+}
+
+
+#block_avl_shops {
+  .shops {
+    span {
+      text-decoration: none !important;
+      border-bottom: 1px dashed rgb(44, 44, 44);
+    }
+  }
+}
+
+#m24-btn-credit {
+  display: none;
+}
+
+.credit_payment {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card_pay_btn{
+  cursor: pointer;
+}
+
+.to-basket-data {
+  display: none;
+}
+.slider_box{
+  position: relative;
+}
+
+
+@media screen and (min-width: 1234px) {
+  #content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail {
+    box-shadow: inset 0px 13px 29px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .h1_bread_cont {
+    position: absolute;
+    width: 67%;
+    margin-left: 40px;
+    z-index: 2;
+    h1 {
+      display: inline-block !important;
+      width: 60%;
+    }
+  }
+
+  // окно с картинками
+  .left_panel {
+    position: relative;
+    width: 840px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+    #breadcrumb, h1 {
+      margin-left: 40px;
+    }
+    #breadcrumb {
+      margin-bottom: 20px;
+    }
+    .slider_box{
+      display: inline-block;
+      width: 100%;
+      //
+    }
+    // верхний слайдер
+    #slaider1 {
+      width: 840px;
+      max-width: 80%;
+      margin-left: 5%;
+      padding: 0 !important;
+      position: relative;
+      .banner_mini_box {
+        max-width: 150px;
+        position: absolute;
+        left: -38px;
+        bottom: -20px;
+        .mini_banner_img {
+          max-width: 150px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    #product_slider_big {
+      margin:auto;
+      width: 100%;
+      box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+      .owlElement{
+        position: relative;
+        margin: auto;
+        //width: 650px;
+        max-width: 100%;
+        height: 500px;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        .panel_img{
+          position: absolute;
+          top:50%;
+          left:50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 650px;
+          max-width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .video-responsive-block{
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 100%;
+          height: 100%;
+        }
+        .video-button{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .img_youtube{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 20%;
+          height: 20%;
+          background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/prev_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/next_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+    }
+    // нижний слайдер
+    #owl2 {
+      width: 650px;
+      max-width: 80%;
+      margin: auto;
+      margin-top: 15px;
+      margin-left: 5%;
+      .owlElement {
+        position: relative;
+        width: 100px;
+        height: 77px;
+        text-align: center;
+        vertical-align: bottom;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        .panel_img {
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          .img_youtube {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+      }
+      .owlElement:hover {
+        border: 2px solid rgb(156, 194, 24);
+        cursor: pointer;
+      }
+    }
+
+    //стикеры новинка, хит, рассрочка
+    .sticker_box{
+      display: inline-block;
+      width: 140px;
+      position: absolute;
+      top:0px;
+      right: 33px;
+      .sticker_all_btn{
+        position: absolute;
+        top:0px;
+        right: -30px;
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border: 2px solid rgb(129, 132, 161);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 26px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        .fa{
+          font-size: 18px;
+        }
+      }
+      .sticker_unvisible{
+        display: none!important;
+      }
+      .sticker_item{
+        display: inline-block;
+        width:100%;
+        font-family: 'Comic Sans MS';
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        //border: 1px solid red;
+        border-radius: 6px;
+        margin-bottom: 3px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        border-left: 2px solid rgba(125,125,125,0.85);
+        border-right: 2px solid rgba(125,125,125,0.85);
+        overflow: hidden;
+        .sticker_grad{
+          display: inline-block;
+          width:100%;
+          padding: 4px 4px;
+          position: relative;
+          color: rgb(255,255,255);
+          //font-weight: bold;
+          text-decoration: none;
+          //text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+          user-select: none;
+          outline: none;
+          //border-radius: 3px / 100%;
+          background-image:
+                  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                  linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5));
+                  //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+                  //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          background-repeat: no-repeat;
+          background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+          background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+          box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .sticker_grad:hover {
+          transition: .5s linear;
+          background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+      }
+      .sticker_sale{
+        background: rgb(248,211,18);
+      }
+      .sticker_new{
+        background: rgb(156, 194, 24);
+      }
+      .sticker_hit{
+        background: rgb(19, 164, 255);
+      }
+      .sticker_halva{
+        background-image: linear-gradient(to right, #e4ceb0 50%, #b75c3c 50%);
+        background-size: 1em 1em;
+        span{
+          display: inline-block;
+          background: #6a3637;
+          padding: 1px 4px;
+          border-radius: 2px;
+        }
+      }
+      .sticker_card{
+        background: #7303c0;
+      }
+      .sticker_credit{
+        background: rgb(255, 99, 71);
+      }
+    }
+    // отзывы и характеристики
+    .tabs_section {
+      max-width: 90%;
+      border-top: 1px solid rgb(156, 194, 24);
+      border-bottom: 1px solid rgb(156, 194, 24);
+      margin-top: 30px !important;
+      margin-bottom: 10px !important;
+      margin-left: 5% !important;
+      padding: 0% !important;
+      li {
+        display: inline-block;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        cursor: pointer;
+        a {
+          display: inline-block;
+          padding: 10px 25px;
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none !important;
+          span {
+            color: rgb(44, 44, 44) !important;
+          }
+        }
+      }
+
+      li:hover, .active {
+        border-bottom: 5px solid rgb(156, 194, 24);
+        padding: 0 !important;
+      }
+    }
+    .tabgroup {
+      width: 90%;
+      margin-left: 5% !important;
+      .description_box {
+        display: none;
+        width: 100%;
+        .tab_properties {
+          padding: 0%;
+          width: 100%;
+        }
+        img {
+          max-width: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+    .shops_on_the_map {
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+  // правый блок
+  .right_panel {
+    float: left;
+    width: 393px;
+    //height: 100vw;
+    background-color: transparent;
+    border-radius: 0 15px 15px 0;
+    .wrapper {
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+      height: 100%;
+      padding-left: 50px;
+    }
+    // старая цена
+    .catalog-detail-item-price-old {
+      padding-top: 70px;
+      font-size: 14px;
+      .old_price_cont {
+        position: relative;
+      }
+      .old_price_cont:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: "";
+        width: 55px;
+        height: 10px;
+        border-top: 2px solid rgb(237, 28, 36);
+        transform: rotate(-7deg);
+      }
+    }
+    // стоимость
+    .catalog-detail-item-price {
+      .price_cont {
+        font-size: 42px;
+        font-weight: 900 !important;
+        color: rgb(44, 44, 44);
+      }
+      img{
+        position: absolute;
+        top:10px;
+        right: 12%;
+      }
+      // стоимость в кредит
+      .credit_payment {
+        color: rgb(44, 44, 44);
+        font-size: 16px;
+      }
+    }
+    #block_avl_shops {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    // наличие
+    .available {
+      float: left;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+      .not_avl {
+        .fa {
+          color: rgb(255, 216, 0);
+        }
+      }
+    }
+    .shops {
+      float: left;
+      padding-left: 15px;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+        text-decoration: underline;
+      }
+    }
+    // кнопки на правой панели
+    .button_cont_m24 {
+      width: 260px;
+      max-width: 63%;
+    }
+    .btn_m24 {
+      padding: 8px 20px 8px 20px;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      position: relative;
+    }
+    .btn_m24:hover {
+      color: rgb(255, 255, 255) !important;
+      background: #575b71 !important;
+      border: 1px solid #575b71 !important;
+      font-weight: normal !important;
+    }
+    .add_basket_btn {
+      color: rgb(255, 255, 255);
+      width: 100%;
+      font-size: 14px !important;
+      font-weight: normal !important;
+      position: relative;
+    }
+    .fa-cart-plus {
+      position: absolute;
+      top: 7px;
+      right: 15%;
+      margin-left: 80px;
+      color: rgb(255, 255, 255);
+    }
+    .boc_anch {
+      width: 100%;
+      background-color: rgb(255, 255, 255) !important;
+      border: 1px solid rgb(156, 194, 24);
+      color: rgb(156, 194, 24) !important;
+    }
+    .btn_float_cont_m24 {
+      width: 120%;
+    }
+    .compare_float {
+      float: left;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      text-align: center !important;
+    }
+    .kupivkredit_btn {
+      float: right;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      background-color: rgb(255, 216, 0);
+      border: 1px solid rgb(255, 216, 0);
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      text-align: center !important;
+    }
+    .apuo_detail {
+      display: inline-block;
+      line-height: 1.1em !important;
+      margin-bottom: 10px !important;
+      width: 100%;
+      height: auto !important;
+      color: rgb(255, 255, 255);
+    }
+    .fa-clock-o {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .notify_anch {
+      display: inline-block;
+      padding: 8px 20px 8px 20px;
+      width: 100%;
+      text-align: left;
+      line-height: 1.1em !important;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      font-size: 11px;
+      color: rgb(255, 255, 255);
+      position: relative;
+    }
+    .fa-envelope {
+      position: absolute;
+      color: rgb(255, 255, 255) !important;
+      top: 5px;
+      right: 7px;
+    }
+    .compare_one {
+      width: 100%;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      font-size: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .catalog-detail-delivery-text {
+      border: none !important;
+      //margin: auto!important;
+      margin-top: 30px !important;
+      width: 260px;
+      max-width: 75%;
+      background-color: rgb(245, 245, 245);
+    }
+    .card_pay_btn {
+      margin-top: 15px;
+      width: 260px;
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1253px) {
+  #content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail {
+    box-shadow: inset 0px 13px 29px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .h1_bread_cont {
+    position: absolute;
+    width: 610px;
+    margin-left: 20px;
+    z-index: 2;
+    #breadcrumb{
+      display: inline-block !important;
+      width: 100%;
+    }
+    h1 {
+      display: inline-block !important;
+      width: 100%;
+    }
+  }
+
+  // окно с картинками
+  .left_panel {
+    position: relative;
+    width: 650px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+    #breadcrumb {
+      margin-bottom: 20px;
+    }
+    .slider_box{
+      display: inline-block;
+      width: 100%;
+      position: relative;
+    }
+    // верхний слайдер
+    #slaider1 {
+      width: 650px;
+      max-width: 80%;
+      margin-left: 5%;
+      padding: 0 !important;
+      position: relative;
+      .banner_mini_box {
+        max-width: 150px;
+        position: absolute;
+        left: -40px;
+        bottom: -20px;
+        .mini_banner_img {
+          max-width: 150px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    #product_slider_big {
+      margin:auto;
+      width: 100%;
+      box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+      .owlElement{
+        position: relative;
+        margin: auto;
+        //width: 650px;
+        max-width: 100%;
+        height: 500px;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        .panel_img{
+          position: absolute;
+          top:50%;
+          left:50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 650px;
+          max-width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .video-responsive-block{
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 100%;
+          height: 100%;
+        }
+        .video-button{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .img_youtube{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 20%;
+          height: 20%;
+          background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/prev_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/next_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+    }
+    // нижний слайдер
+    #owl2 {
+      width: 650px;
+      margin: auto;
+      max-width: 80%;
+      margin-left: 5%;
+      margin-top: 15px;
+      .owlElement {
+        position: relative;
+        width: 100px;
+        height: 77px;
+        text-align: center;
+        vertical-align: bottom;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        .panel_img {
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          .img_youtube {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+      }
+      .owlElement:hover {
+        border: 2px solid rgb(156, 194, 24);
+        cursor: pointer;
+      }
+    }
+
+    //стикеры новинка, хит, рассрочка
+    .sticker_box{
+      display: inline-block;
+      width: 140px;
+      position: absolute;
+      top:0px;
+      right: 33px;
+      .sticker_all_btn{
+        position: absolute;
+        top:0px;
+        right: -30px;
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border: 2px solid rgb(129, 132, 161);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 26px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        .fa{
+          font-size: 18px;
+        }
+      }
+      .sticker_unvisible{
+        display: none!important;
+      }
+      .sticker_item{
+        display: inline-block;
+        width:100%;
+        font-family: 'Comic Sans MS';
+        font-size: 14px;
+        font-weight: bold;
+        //border: 1px solid red;
+        border-radius: 6px;
+        margin-bottom: 3px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        border-left: 2px solid rgba(125,125,125,0.85);
+        border-right: 2px solid rgba(125,125,125,0.85);
+        overflow: hidden;
+        text-align: center;
+        .sticker_grad{
+          display: inline-block;
+          width:100%;
+          padding: 4px 4px;
+          position: relative;
+          color: rgb(255,255,255);
+          //font-weight: bold;
+          text-decoration: none;
+          //text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+          user-select: none;
+          outline: none;
+          //border-radius: 3px / 100%;
+          background-image:
+                  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                  linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          background-repeat: no-repeat;
+          background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+          background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+          box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .sticker_grad:hover {
+          transition: .5s linear;
+          background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+      }
+      .sticker_sale{
+        background: rgb(248,211,18);
+      }
+      .sticker_new{
+        background: rgb(156, 194, 24);
+      }
+      .sticker_hit{
+        background: rgb(19, 164, 255);
+      }
+      .sticker_halva{
+        background-image: linear-gradient(to right, #e4ceb0 50%, #b75c3c 50%);
+        background-size: 1em 1em;
+        span{
+          display: inline-block;
+          background: #6a3637;
+          padding: 1px 4px;
+          border-radius: 2px;
+        }
+      }
+      .sticker_card{
+        background: #7303c0;
+      }
+      .sticker_credit{
+        background: rgb(255, 99, 71);
+      }
+    }
+    // отзывы и характеристики
+    .tabs_section {
+      max-width: 90%;
+      border-top: 1px solid rgb(156, 194, 24);
+      border-bottom: 1px solid rgb(156, 194, 24);
+      margin-top: 30px !important;
+      margin-bottom: 10px !important;
+      margin-left: 5% !important;
+      padding: 0% !important;
+      li {
+        display: inline-block;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        cursor: pointer;
+        a {
+          display: inline-block;
+          padding: 10px 25px;
+          font-size: 14px;
+          font-weight: bold;
+          text-decoration: none !important;
+          span {
+            color: rgb(44, 44, 44) !important;
+          }
+        }
+      }
+
+      li:hover, .active {
+        border-bottom: 5px solid rgb(156, 194, 24);
+        padding: 0 !important;
+      }
+    }
+    .tabgroup {
+      width: 90%;
+      margin-left: 5% !important;
+      .description_box {
+        display: none;
+        width: 100%;
+        .tab_properties {
+          padding: 0%;
+          width: 100%;
+        }
+        img {
+          max-width: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+    .shops_on_the_map {
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+  // правый блок
+  .right_panel {
+    float: right;
+    width: 344px;
+    //height: 100vw;
+    background-color: transparent;
+    border-radius: 0 15px 15px 0;
+    .wrapper {
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+      height: 100%;
+      padding-left: 50px;
+    }
+    // старая цена
+    .catalog-detail-item-price-old {
+      padding-top: 70px;
+      font-size: 14px;
+      .old_price_cont {
+        position: relative;
+      }
+      .old_price_cont:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: "";
+        width: 55px;
+        height: 10px;
+        border-top: 2px solid rgb(237, 28, 36);
+        transform: rotate(-7deg);
+      }
+    }
+    // стоимость
+    .catalog-detail-item-price {
+      .price_cont {
+        font-size: 42px;
+        font-weight: 900 !important;
+        color: rgb(44, 44, 44);
+      }
+      img{
+        position: absolute;
+        top:10px;
+        right: 12%;
+      }
+      // стоимость в кредит
+      .credit_payment {
+        color: rgb(44, 44, 44);
+        font-size: 16px;
+      }
+    }
+    #block_avl_shops {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    // наличие
+    .available {
+      float: left;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+      .not_avl {
+        .fa {
+          color: rgb(255, 216, 0);
+        }
+      }
+    }
+    .shops {
+      float: left;
+      padding-left: 15px;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+        text-decoration: underline;
+      }
+    }
+    // кнопки на правой панели
+    .button_cont_m24 {
+      width: 260px;
+      max-width: 63%;
+    }
+    .btn_m24 {
+      padding: 8px 20px 8px 20px;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      position: relative;
+    }
+    .btn_m24:hover {
+      color: rgb(255, 255, 255) !important;
+      background: #575b71 !important;
+      border: 1px solid #575b71 !important;
+      font-weight: normal !important;
+    }
+    .add_basket_btn {
+      color: rgb(255, 255, 255);
+      width: 100%;
+      font-size: 14px !important;
+      font-weight: normal !important;
+      position: relative;
+    }
+    .fa-cart-plus {
+      position: absolute;
+      top: 7px;
+      right: 15%;
+      margin-left: 80px;
+      color: rgb(255, 255, 255);
+    }
+    .boc_anch {
+      width: 100%;
+      background-color: rgb(255, 255, 255) !important;
+      border: 1px solid rgb(156, 194, 24);
+      color: rgb(156, 194, 24) !important;
+    }
+    .btn_float_cont_m24 {
+      width: 120%;
+    }
+    .compare_float {
+      float: left;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      text-align: center !important;
+    }
+    .kupivkredit_btn {
+      float: right;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      background-color: rgb(255, 216, 0);
+      border: 1px solid rgb(255, 216, 0);
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      text-align: center !important;
+    }
+    .apuo_detail {
+      display: inline-block;
+      line-height: 1.1em !important;
+      margin-bottom: 10px !important;
+      width: 100%;
+      height: auto !important;
+      color: rgb(255, 255, 255);
+    }
+    .fa-clock-o {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .notify_anch {
+      display: inline-block;
+      padding: 8px 20px 8px 20px;
+      width: 100%;
+      line-height: 1.1em !important;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      position: relative;
+    }
+    .fa-envelope {
+      position: absolute;
+      color: rgb(255, 255, 255) !important;
+      top: 11px;
+      right: 7px;
+    }
+    .compare_one {
+      width: 100%;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      font-size: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .catalog-detail-delivery-text {
+      border: none !important;
+      //margin: auto!important;
+      margin-top: 30px !important;
+      width: 260px;
+      max-width: 75%;
+      background-color: rgb(245, 245, 245);
+    }
+    .card_pay_btn {
+      margin-top: 15px;
+      width: 260px;
+    }
+  }
+}
+
+// на средних разрешениях 1254
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+  #body_text{
+    padding: 0!important;
+  }
+  #content-wrapper {
+    margin-top: 10px !important;
+  }
+
+  #content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail {
+    width: 100%;
+    box-shadow: inset 0px 13px 29px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .h1_bread_cont {
+    position: absolute;
+    width: 67%;
+    margin-left: 40px;
+    z-index: 2;
+    h1 {
+      display: inline-block !important;
+      width: 60% !important;
+    }
+  }
+
+  // окно с картинками 1254
+  .left_panel {
+    position: relative;
+    float: left;
+    max-width: 514px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+    background: rgb(255,255,255);
+    // верхний слайдер 1254
+    #slaider1 {
+      width: 400px;
+      max-width: 100%;
+      padding: 0 !important;
+      position: relative;
+      margin-left: 5%;
+      .banner_mini_box {
+        max-width: 150px;
+        position: absolute;
+        left: -40px;
+        bottom: -20px;
+        .mini_banner_img {
+          max-width: 150px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    // верхний слайдер 1254
+    #product_slider_big {
+      margin: auto;
+      max-width: 100%;
+      box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+      position: relative;
+      .owlElement {
+        position: relative;
+        margin: auto;
+        //width: 650px;
+        max-width: 100%;
+        height: 380px;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+
+        .panel_img{
+          position: absolute;
+          top:50%;
+          left:50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 650px;
+          max-width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .video-responsive-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 100%;
+          height: 100%;
+        }
+        .video-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .img_youtube {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 20%;
+          height: 20%;
+          background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/prev_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/next_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+    }
+    // нижний слайдер 1254
+    #owl2 {
+      width: 550px;
+      max-width: 80%;
+      margin: auto;
+      margin-top: 15px;
+      .owlElement {
+        position: relative;
+        width: 100px;
+        height: 77px;
+        text-align: center;
+        vertical-align: bottom;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        .panel_img {
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          .img_youtube {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+      }
+      .owlElement:hover {
+        border: 2px solid rgb(156, 194, 24);
+        cursor: pointer;
+      }
+    }
+    //стикеры новинка, хит, рассрочка
+    .sticker_box{
+      display: inline-block;
+      width: 120px;
+      position: absolute;
+      top:0px;
+      right: 26px;
+      .sticker_all_btn{
+        position: absolute;
+        top:0px;
+        right: -25px;
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        border: 2px solid rgb(129, 132, 161);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 23px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        .fa{
+          font-size: 16px;
+        }
+      }
+      .sticker_unvisible{
+        display: none!important;
+      }
+      .sticker_item{
+        display: inline-block;
+        width:100%;
+        font-family: 'Comic Sans MS';
+        font-size: 12px;
+        font-weight: bold;
+        //border: 1px solid red;
+        border-radius: 6px;
+        //margin-bottom: 2px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+
+        border-left: 2px solid rgba(125,125,125,0.85);
+        border-right: 2px solid rgba(125,125,125,0.85);
+        overflow: hidden;
+        text-align: center;
+        .sticker_grad{
+          display: inline-block;
+          width:100%;
+          padding: 4px 4px;
+          position: relative;
+          color: rgb(255,255,255);
+          //font-weight: bold;
+          text-decoration: none;
+          //text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+          user-select: none;
+          outline: none;
+          //border-radius: 3px / 100%;
+          background-image:
+                  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                  linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          background-repeat: no-repeat;
+          background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+          background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+          box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .sticker_grad:hover {
+          transition: .5s linear;
+          background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+      }
+      .sticker_sale{
+        background: rgb(248,211,18);
+      }
+      .sticker_new{
+        background: rgb(156, 194, 24);
+      }
+      .sticker_hit{
+        background: rgb(19, 164, 255);
+      }
+      .sticker_halva{
+        background-image: linear-gradient(to right, #e4ceb0 50%, #b75c3c 50%);
+        background-size: 1em 1em;
+        span{
+          display: inline-block;
+          background: #6a3637;
+          padding: 1px 4px;
+          border-radius: 2px;
+        }
+      }
+      .sticker_card{
+        background: #7303c0;
+      }
+      .sticker_credit{
+        background: rgb(255, 99, 71);
+      }
+    }
+    // отзывы и характеристики 1254
+    .tabs_section {
+      max-width: 90%;
+      border-top: 1px solid rgb(156, 194, 24);
+      border-bottom: 1px solid rgb(156, 194, 24);
+      margin-top: 30px !important;
+      margin-bottom: 10px !important;
+      margin-left: 5% !important;
+      padding: 0% !important;
+      li {
+        display: inline-block;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        cursor: pointer;
+        a {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 13px;
+          font-weight: bold;
+          text-decoration: none !important;
+          span {
+            color: rgb(44, 44, 44);
+          }
+        }
+      }
+      li:hover, .active {
+        border-bottom: 5px solid rgb(156, 194, 24);
+        padding: 0 !important;
+      }
+    }
+    .tabgroup {
+      width: 90%;
+      margin-left: 5% !important;
+      .description_box {
+        display: none;
+        width: 100%;
+        .tab_properties {
+          padding: 0%;
+          width: 100%;
+        }
+        img {
+          max-width: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+    .shops_on_the_map {
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+  // правый блок 1254
+  .right_panel {
+    float: left;
+    width: 245px;
+    border-radius: 0 15px 15px 0;
+    .price_container {
+      width: 100% !important;
+    }
+    .wrapper {
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+      height: 100%;
+      padding-left: 10px;
+    }
+    // старая цена 1254
+    .catalog-detail-item-price-old {
+      padding-top: 70px;
+      font-size: 14px;
+      .old_price_cont {
+        position: relative;
+      }
+      .old_price_cont:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: "";
+        width: 55px;
+        height: 10px;
+        border-top: 2px solid rgb(237, 28, 36);
+        transform: rotate(-7deg);
+      }
+    }
+    // стоимость 1254
+    .catalog-detail-item-price {
+      .price_cont {
+        display: inline-block;
+        width: 100%;
+        font-size: 36px;
+        font-weight: 800;
+        color: rgb(44, 44, 44);
+      }
+      // стоимость в кредит
+      .credit_payment {
+        color: rgb(44, 44, 44);
+        font-size: 16px;
+      }
+    }
+    #block_avl_shops {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    // наличие 1254
+    .available {
+      float: left;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+      .not_avl {
+        .fa {
+          color: rgb(255, 216, 0);
+        }
+      }
+    }
+    .shops {
+      float: left;
+      padding-left: 15px;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+        text-decoration: underline;
+      }
+    }
+    // кнопки на правой панели 1254
+    .button_cont_m24 {
+      max-width: 100%;
+    }
+    .btn_m24 {
+      padding: 8px 20px 8px 20px;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 12px !important;
+      position: relative;
+    }
+    .btn_m24:hover {
+      color: rgb(255, 255, 255);
+      background: #575b71 !important;
+      border: 1px solid #575b71;
+    }
+    .add_basket_btn {
+      color: rgb(255, 255, 255);
+      width: 100%;
+      font-weight: normal !important;
+      position: relative;
+    }
+    .fa-cart-plus {
+      position: absolute;
+      top: 7px;
+      right: 15%;
+      font-size: 16px !important;
+      margin-left: 60px;
+      color: rgb(255, 255, 255);
+    }
+    .boc_anch {
+      background-color: rgb(255, 255, 255) !important;
+      width: 100% !important;
+      border: 1px solid rgb(156, 194, 24);
+      color: rgb(156, 194, 24) !important;
+    }
+    .btn_float_cont_m24 {
+      width: 120%;
+    }
+    .compare_float {
+      float: left;
+      width: 45%;
+      padding: 8px 0px 8px 0px !important;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      margin-bottom: 10px !important;
+      text-align: center;
+    }
+    .kupivkredit_btn {
+      float: right;
+      width: 45%;
+      padding: 8px 0px 8px 0px !important;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      background-color: rgb(255, 216, 0);
+      border: 1px solid rgb(255, 216, 0);
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      text-align: center;
+    }
+    .apuo_detail {
+      display: inline-block;
+      line-height: 1.1em !important;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      margin-bottom: 10px !important;
+      width: 80%;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+    }
+    .fa-clock-o {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .notify_anch {
+      display: inline-block;
+      padding: 8px 20px 8px 20px;
+      text-align: left;
+      width: 80%;
+      line-height: 1.1em !important;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      font-size: 11px !important;
+      color: rgb(255, 255, 255);
+      position: relative;
+    }
+    .fa-envelope {
+      position: absolute;
+      top: 11px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .compare_one {
+      width: 80%;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      font-size: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+    }
+    .catalog-detail-delivery-text {
+      max-width: 90%;
+      background-color: rgb(245, 245, 245);
+      border: none !important;
+    }
+    .card_pay_btn {
+      margin-top: 15px;
+      max-width: 80%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/*экран 768-620*/
+@media screen and (min-width: 530px) and (max-width: 767px) {
+  #content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail {
+    width: 100%!important;
+  }
+
+  .h1_bread_cont {
+    width: 80%;
+    margin: auto;
+
+  }
+
+  // окно с картинками 768
+  .left_panel {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+    #breadcrumb, h1 {
+      width: 90%;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+    #breadcrumb {
+      font-size: 16px;
+    }
+    #breadcrumb-search {
+      display: block !important;
+      visibility: visible !important;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .slider_box{
+      display: inline-block;
+      //width: 500px;
+      width: 100%;
+    }
+    // верхний слайдер 768
+    #slaider1 {
+      width: 500px;
+      max-width: 100%;
+      padding: 0!important;
+      margin: auto;
+      position: relative;
+      .banner_mini_box {
+        max-width: 150px;
+        position: absolute;
+        left: -40px;
+        bottom: -20px;
+        .mini_banner_img {
+          max-width: 150px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    // верхний слайдер 768
+    #product_slider_big {
+      margin:auto;
+      width: 500px;
+      max-width: 80%;
+      box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+      .owlElement{
+        position: relative;
+        margin: auto;
+        //width: 650px;
+        max-width: 100%;
+        height: 350px;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        .panel_img{
+          position: absolute;
+          top:50%;
+          left:50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 500px;
+          max-width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .video-responsive-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 100%;
+          height: 100%;
+        }
+        .video-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .img_youtube {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 20%;
+          height: 20%;
+          background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/prev_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/next_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+    }
+    // нижний слайдер 768
+    #owl2 {
+      width: 500px;
+      max-width: 80%;
+      margin: auto;
+      margin-top: 15px;
+      .owlElement {
+        position: relative;
+        width: 100px;
+        height: 77px;
+        text-align: center;
+        vertical-align: bottom;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        .panel_img {
+          max-width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          .img_youtube {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+      }
+      .owlElement:hover {
+        border: 2px solid rgb(156, 194, 24);
+        cursor: pointer;
+      }
+    }
+    //стикеры новинка, хит, рассрочка
+    .sticker_box{
+      display: inline-block;
+      width: 120px;
+      position: absolute;
+      top:0px;
+      right: 26px;
+      .sticker_all_btn{
+        position: absolute;
+        top:0px;
+        right: -25px;
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        border: 2px solid rgb(129, 132, 161);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 23px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        .fa{
+          font-size: 16px;
+        }
+      }
+      .sticker_unvisible{
+        display: none!important;
+      }
+      .sticker_item{
+        display: inline-block;
+        width:100%;
+        font-family: 'Comic Sans MS';
+        font-size: 12px;
+        font-weight: bold;
+        //border: 1px solid red;
+        border-radius: 6px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        border-left: 2px solid rgba(125,125,125,0.85);
+        border-right: 2px solid rgba(125,125,125,0.85);
+        overflow: hidden;
+        text-align: center;
+        .sticker_grad{
+          display: inline-block;
+          width:100%;
+          padding: 4px 4px;
+          position: relative;
+          color: rgb(255,255,255);
+          //font-weight: bold;
+          text-decoration: none;
+          //text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+          user-select: none;
+          outline: none;
+          //border-radius: 3px / 100%;
+          background-image:
+                  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                  linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          background-repeat: no-repeat;
+          background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+          background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+          box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .sticker_grad:hover {
+          transition: .5s linear;
+          background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+      }
+      .sticker_sale{
+        background: rgb(248,211,18);
+      }
+      .sticker_new{
+        background: rgb(156, 194, 24);
+      }
+      .sticker_hit{
+        background: rgb(19, 164, 255);
+      }
+      .sticker_halva{
+        background-image: linear-gradient(to right, #e4ceb0 50%, #b75c3c 50%);
+        background-size: 1em 1em;
+        span{
+          display: inline-block;
+          background: #6a3637;
+          padding: 1px 4px;
+          border-radius: 2px;
+        }
+      }
+      .sticker_card{
+        background: #7303c0;
+      }
+      .sticker_credit{
+        background: rgb(255, 99, 71);
+      }
+    }
+    // отзывы и характеристики 768
+    .tabs_section {
+      max-width: 90%;
+      border-top: 1px solid rgb(156, 194, 24);
+      border-bottom: 1px solid rgb(156, 194, 24);
+      margin-left: 5% !important;
+      margin-top: 580px;
+      padding: 0% !important;
+      li {
+        display: inline-block;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        cursor: pointer;
+        a {
+          display: inline-block;
+          padding: 10px 15px;
+          font-size: 12px;
+          font-weight: bold;
+          text-decoration: none !important;
+          span {
+            color: rgb(44, 44, 44);
+          }
+        }
+      }
+      li:hover, .active {
+        border-bottom: 5px solid rgb(156, 194, 24);
+        padding: 0 !important;
+      }
+    }
+    .tabgroup {
+      width: 90%;
+      margin-left: 5% !important;
+      .description_box {
+        display: none;
+        width: 100%;
+        .description {
+          padding: 0%;
+          max-width: 100%;
+        }
+        .tab_properties {
+          padding: 0%;
+          width: 100%;
+        }
+        img {
+          max-width: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        iFrame {
+          width: 80%;
+        }
+      }
+    }
+    .shops_on_the_map {
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+  #body_text{
+    position:relative;
+  }
+  // правый блок 768
+  .right_panel {
+    position: absolute !important;
+    left: 0 !important;
+    top: 860px;
+    width: 100%;
+    .shadow_wrapper {
+      max-width: 80%;
+      box-shadow: inset 0px 9px 35px 0px rgba(0, 0, 0, 0.2) !important;
+      height: 100%;
+      border-radius: 0 0 15px 15px;
+      margin: auto;
+      position: relative;
+    }
+    .wrapper {
+    }
+    .price_container {
+      width: 45%;
+      float: left;
+      padding-left: 5%;
+    }
+    // старая цена 768
+    .catalog-detail-item-price-old {
+      width: 90%;
+      margin: auto;
+      padding-top: 40px;
+      font-size: 14px;
+      .old_price_cont {
+        position: relative;
+      }
+      .old_price_cont:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: "";
+        width: 55px;
+        height: 10px;
+        border-top: 2px solid rgb(237, 28, 36);
+        transform: rotate(-7deg);
+      }
+    }
+    // стоимость 768
+    .catalog-detail-item-price {
+      position: relative;
+      .price_cont {
+        font-size: 36px;
+        font-weight: 800;
+        color: rgb(44, 44, 44);
+      }
+      img {
+        position: absolute;
+        top: -35px;
+        right: 20%;
+      }
+      // стоимость в кредит 768
+      .credit_payment {
+        color: rgb(44, 44, 44);
+        font-size: 16px;
+      }
+    }
+    #block_avl_shops {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    // наличие 768
+    .available {
+      float: left;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+      .not_avl {
+        .fa {
+          color: rgb(255, 216, 0);
+        }
+      }
+    }
+    .shops {
+      float: left;
+      //padding-left: 15px;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+        text-decoration: underline;
+      }
+    }
+    // кнопки на правой панели 768
+    .button_cont_m24 {
+      width: 50%;
+      float: right;
+      margin-top: 30px;
+    }
+
+    .btn_m24 {
+      padding: 8px 20px 8px 20px;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 12px !important;
+      width: 70% !important;
+      position: relative;
+    }
+    .btn_m24:hover {
+      color: rgb(255, 255, 255);
+      background: #575b71 !important;
+      border: 1px solid #575b71;
+    }
+    .add_basket_btn {
+      color: rgb(255, 255, 255);
+      font-weight: normal !important;
+      position: relative;
+    }
+    .fa-cart-plus {
+      position: absolute;
+      top: 5px;
+      right: 10%;
+      color: rgb(255, 255, 255);
+    }
+    .boc_anch {
+      background-color: rgb(255, 255, 255) !important;
+      border: 1px solid rgb(156, 194, 24);
+      color: rgb(156, 194, 24) !important;
+    }
+    .btn_float_cont_m24 {
+      width: 84%;
+    }
+    .compare_float {
+      float: left;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      margin-bottom: 10px !important;
+      text-align: center !important;
+    }
+    .kupivkredit_btn {
+      float: right;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      background-color: rgb(255, 216, 0);
+      border: 1px solid rgb(255, 216, 0);
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      text-align: center !important;
+    }
+    .apuo_detail {
+      display: inline-block;
+      line-height: 1.1em !important;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      margin-bottom: 10px !important;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+    }
+    .fa-clock-o {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .notify_anch {
+      display: inline-block;
+      padding: 10px 20px 10px 20px;
+      width: 70%;
+      line-height: 1.1em !important;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      font-size: 11px !important;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      position: relative;
+    }
+    .fa-envelope {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .compare_one {
+      width: 80%;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      font-size: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+    }
+    .catalog-detail-delivery-text {
+      margin-left: 10% !important;
+      max-width: 40%;
+      background-color: rgb(245, 245, 245);
+      border: none !important;
+    }
+    .card_pay_btn {
+      position: absolute;
+      top:100px;
+      right: 14%;
+      margin-top: 15px;
+      max-width: 16%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/*экран 768*/
+@media screen and (min-width: 425px) and (max-width: 529px) {
+  #content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail {
+    width: 100%!important;
+  }
+
+  .h1_bread_cont {
+    width: 80%;
+    margin: auto;
+
+  }
+
+  // окно с картинками 768
+  .left_panel {
+    position: relative;
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+    #breadcrumb, h1 {
+      width: 90%;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+    #breadcrumb {
+      font-size: 16px;
+    }
+    #breadcrumb-search {
+      display: block !important;
+      visibility: visible !important;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .slider_box{
+      display: inline-block;
+      width: 100%;
+    }
+    // верхний слайдер 768
+    #slaider1 {
+      width: 350px;
+      max-width: 100%;
+      padding: 0!important;
+      margin: auto;
+      position: relative;
+      .banner_mini_box {
+        max-width: 150px;
+        position: absolute;
+        left: -40px;
+        bottom: -20px;
+        .mini_banner_img {
+          max-width: 150px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    // верхний слайдер 768
+    #product_slider_big {
+      margin:auto;
+      width: 350px;
+      max-width: 100%;
+      box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+      .owlElement{
+        position: relative;
+        margin: auto;
+        //width: 650px;
+        max-width: 100%;
+        height: 350px;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        .panel_img{
+          position: absolute;
+          top:50%;
+          left:50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 400px;
+          max-width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .video-responsive-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 100%;
+          height: 100%;
+        }
+        .video-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .img_youtube {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 20%;
+          height: 20%;
+          background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/prev_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/next_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+    }
+    // нижний слайдер 768
+    #owl2 {
+      width: 400px;
+      max-width: 100%;
+      margin: auto;
+      margin-top: 15px;
+      .owlElement {
+        position: relative;
+        width: 90px;
+        height: 77px;
+        text-align: center;
+        vertical-align: bottom;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        .panel_img {
+          max-width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          .img_youtube {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+      }
+      .owlElement:hover {
+        border: 2px solid rgb(156, 194, 24);
+        cursor: pointer;
+      }
+    }
+    //стикеры новинка, хит, рассрочка
+    .sticker_box{
+      display: inline-block;
+      width: 120px;
+      position: absolute;
+      top:0px;
+      right: 26px;
+      .sticker_all_btn{
+        position: absolute;
+        top:0px;
+        right: -25px;
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        border: 2px solid rgb(129, 132, 161);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 23px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        .fa{
+          font-size: 16px;
+        }
+      }
+      .sticker_unvisible{
+        display: none!important;
+      }
+      .sticker_item{
+        display: inline-block;
+        width:100%;
+        font-family: 'Comic Sans MS';
+        font-size: 12px;
+        font-weight: bold;
+        //border: 1px solid red;
+        border-radius: 6px;
+        margin-bottom: 3px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        border-left: 2px solid rgba(125,125,125,0.85);
+        border-right: 2px solid rgba(125,125,125,0.85);
+        overflow: hidden;
+        text-align: center;
+        .sticker_grad{
+          display: inline-block;
+          width:100%;
+          padding: 4px 4px;
+          position: relative;
+          color: rgb(255,255,255);
+          //font-weight: bold;
+          text-decoration: none;
+          //text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+          user-select: none;
+          outline: none;
+          //border-radius: 3px / 100%;
+          background-image:
+                  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                  linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          background-repeat: no-repeat;
+          background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+          background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+          box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .sticker_grad:hover {
+          transition: .5s linear;
+          background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+      }
+      .sticker_sale{
+        background: rgb(248,211,18);
+      }
+      .sticker_new{
+        background: rgb(156, 194, 24);
+      }
+      .sticker_hit{
+        background: rgb(19, 164, 255);
+      }
+      .sticker_halva{
+        background-image: linear-gradient(to right, #e4ceb0 50%, #b75c3c 50%);
+        background-size: 1em 1em;
+        span{
+          display: inline-block;
+          background: #6a3637;
+          padding: 1px 4px;
+          border-radius: 2px;
+        }
+      }
+      .sticker_card{
+        background: #7303c0;
+      }
+      .sticker_credit{
+        background: rgb(255, 99, 71);
+      }
+    }
+    // отзывы и характеристики 768
+    .tabs_section {
+      max-width: 90%;
+      border-top: 1px solid rgb(156, 194, 24);
+      border-bottom: 1px solid rgb(156, 194, 24);
+      margin-left: 5% !important;
+      margin-top: 580px;
+      padding: 0% !important;
+      li {
+        display: inline-block;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        cursor: pointer;
+        a {
+          display: inline-block;
+          padding: 10px 15px;
+          font-size: 12px;
+          font-weight: bold;
+          text-decoration: none !important;
+          span {
+            color: rgb(44, 44, 44);
+          }
+        }
+      }
+      li:hover, .active {
+        border-bottom: 5px solid rgb(156, 194, 24);
+        padding: 0 !important;
+      }
+    }
+    .tabgroup {
+      width: 90%;
+      margin-left: 5% !important;
+      .description_box {
+        display: none;
+        width: 100%;
+        .description {
+          padding: 0%;
+          max-width: 100%;
+        }
+        .tab_properties {
+          padding: 0%;
+          width: 100%;
+        }
+        img {
+          max-width: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        iFrame {
+          width: 80%;
+        }
+      }
+    }
+    .shops_on_the_map {
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+  #body_text{
+    position:relative;
+  }
+  // правый блок 768
+  .right_panel {
+    position: absolute !important;
+    left: 0 !important;
+    top: 860px;
+    width: 100%;
+    .shadow_wrapper {
+      max-width: 80%;
+      box-shadow: inset 0px 9px 35px 0px rgba(0, 0, 0, 0.2) !important;
+      height: 100%;
+      border-radius: 0 0 15px 15px;
+      margin: auto;
+      position: relative;
+    }
+    .wrapper {
+    }
+    .price_container {
+      width: 49%;
+      float: left;
+      padding-left: 5%;
+    }
+    // старая цена 768
+    .catalog-detail-item-price-old {
+      width: 90%;
+      margin: auto;
+      padding-top: 40px;
+      font-size: 14px;
+      .old_price_cont {
+        position: relative;
+      }
+      .old_price_cont:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: "";
+        width: 55px;
+        height: 10px;
+        border-top: 2px solid rgb(237, 28, 36);
+        transform: rotate(-7deg);
+      }
+    }
+    // стоимость 768
+    .catalog-detail-item-price {
+      position: relative;
+      .price_cont {
+        font-size: 32px;
+        font-weight: 800;
+        color: rgb(44, 44, 44);
+      }
+      // стоимость в кредит 768
+      .credit_payment {
+        color: rgb(44, 44, 44);
+        font-size: 16px;
+      }
+    }
+    #block_avl_shops {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    // наличие 768
+    .available {
+      float: left;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+      .not_avl {
+        .fa {
+          color: rgb(255, 216, 0);
+        }
+      }
+    }
+    .shops {
+      float: left;
+      //padding-left: 15px;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+        text-decoration: underline;
+      }
+    }
+    // кнопки на правой панели 768
+    .button_cont_m24 {
+      width: 50%;
+      float: right;
+      margin-top: 30px;
+    }
+
+    .btn_m24 {
+      padding: 8px 20px 8px 20px;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 12px !important;
+      width: 95%;
+      position: relative;
+    }
+    .btn_m24:hover {
+      color: rgb(255, 255, 255);
+      background: #575b71 !important;
+      border: 1px solid #575b71;
+    }
+    .add_basket_btn {
+      color: rgb(255, 255, 255);
+      font-weight: normal !important;
+      position: relative;
+    }
+    .fa-cart-plus {
+      position: absolute;
+      top: 5px;
+      right: 10%;
+      color: rgb(255, 255, 255);
+    }
+    .boc_anch {
+      background-color: rgb(255, 255, 255) !important;
+      border: 1px solid rgb(156, 194, 24);
+      color: rgb(156, 194, 24) !important;
+    }
+    .btn_float_cont_m24 {
+      width: 84%;
+    }
+    .compare_float {
+      float: left;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      margin-bottom: 10px !important;
+      text-align: center !important;
+    }
+    .kupivkredit_btn {
+      float: right;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      background-color: rgb(255, 216, 0);
+      border: 1px solid rgb(255, 216, 0);
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      text-align: center !important;
+    }
+    .apuo_detail {
+      display: inline-block;
+      line-height: 1.1em !important;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      margin-bottom: 10px !important;
+      font-size: 14px;
+      color: rgb(255, 255, 255);
+    }
+    .fa-clock-o {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .notify_anch {
+      display: inline-block;
+      padding: 8px 20px 8px 20px;
+      width: 95%;
+      text-align: left;
+      line-height: 1.1em !important;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      font-size: 11px !important;
+      color: rgb(255, 255, 255);
+      position: relative;
+    }
+    .fa-envelope {
+      position: absolute;
+      top: 11px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .compare_one {
+      width: 95%;
+      padding: 8px 20px 8px 20px !important;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      font-size: 14px;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+    }
+    .catalog-detail-delivery-text {
+      margin-left: 10% !important;
+      max-width: 40%;
+      background-color: rgb(245, 245, 245);
+      border: none !important;
+    }
+    .card_pay_btn {
+      position: absolute;
+      top:110px;
+      right: 14%;
+      margin-top: 5px;
+      max-width: 16%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* Экран 425*/
+@media screen and (max-width: 425px) {
+  #content-wrapper {
+    margin: 0 !important;
+  }
+
+  #content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail-element {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .catalog-detail {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .h1_bread_cont {
+    width: 80%;
+    margin: auto;
+    #breadcrumb {
+      display: none;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  #body_text {
+    padding: 0 !important;
+  }
+
+  // окно с картинками 425
+  .left_panel {
+    position: relative;
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+    h1 {
+      width: 90%;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+    #breadcrumb {
+      display: none;
+    }
+    h1 {
+      font-size: 14px;
+    }
+    .slider_box{
+      display: inline-block;
+      width: 90%;
+      margin-left: 5%;
+    }
+    // верхний слайдер 425
+    #slaider1 {
+      width: 300px;
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: auto;
+      position: relative;
+      .banner_mini_box {
+        max-width: 100px;
+        position: absolute;
+        left: 5px;
+        bottom: -20px;
+        .mini_banner_img {
+          max-width: 100px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    // верхний слайдер 425
+    #product_slider_big {
+      margin: auto;
+      max-width: 90%;
+      box-shadow: 0.209px 3.995px 13px 0px rgba(34, 34, 34, 0.24);
+      .owlElement {
+        position: relative;
+        margin: auto;
+        width: 300px;
+        max-width: 100%;
+        height: 230px;
+        overflow: hidden;
+        text-align: center;
+        vertical-align: middle;
+        .panel_img{
+          position: absolute;
+          top:50%;
+          left:50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 300px;
+          max-width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .video-responsive-block {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 100%;
+          height: 100%;
+        }
+        .video-button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+        .img_youtube {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 20%;
+          height: 20%;
+          background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/prev_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-image: url("/owl-carousel/next_contact.png");
+        width: 35px;
+        height: 100px;
+        cursor: pointer;
+      }
+    }
+    // нижний слайдер 425
+    #owl2 {
+      width: 300px;
+      max-width: 80%;
+      margin: auto;
+      margin-top: 15px;
+      .owlElement {
+        position: relative;
+        width: 100px;
+        height: 77px;
+        text-align: center;
+        vertical-align: bottom;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        .panel_img {
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          .img_youtube {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 20%;
+            height: 20%;
+            background-image: url("/bitrix/templates/elektro_flat/components/m24/catalog/.default/bitrix/catalog.element/new_design/image/YouTube.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+      }
+      .owlElement:hover {
+        border: 2px solid rgb(156, 194, 24);
+        cursor: pointer;
+      }
+    }
+
+    //стикеры новинка, хит, рассрочка
+    .sticker_box{
+      display: inline-block;
+      width: 120px;
+      position: absolute;
+      top:0px;
+      right: 26px;
+      .sticker_all_btn{
+        position: absolute;
+        top:0px;
+        right: -25px;
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        border: 2px solid rgb(129, 132, 161);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 23px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        .fa{
+          font-size: 16px;
+        }
+      }
+      .sticker_unvisible{
+        display: none!important;
+      }
+      .sticker_item{
+        display: inline-block;
+        width:100%;
+        font-family: 'Comic Sans MS';
+        font-size: 12px;
+        font-weight: bold;
+        //border: 1px solid red;
+        border-radius: 6px;
+        box-shadow: 1px 2px 7px 0px rgba(34, 34, 34, 0.24);
+        border-left: 2px solid rgba(125,125,125,0.85);
+        border-right: 2px solid rgba(125,125,125,0.85);
+        overflow: hidden;
+        text-align: center;
+        .sticker_grad{
+          display: inline-block;
+          width:100%;
+          padding: 4px 4px;
+          position: relative;
+          color: rgb(255,255,255);
+          //font-weight: bold;
+          text-decoration: none;
+          //text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+          user-select: none;
+          outline: none;
+          //border-radius: 3px / 100%;
+          background-image:
+                  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                  linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                  linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          //linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+          background-repeat: no-repeat;
+          background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+          background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+          box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .sticker_grad:hover {
+          transition: .5s linear;
+          background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+      }
+      .sticker_sale{
+        background: rgb(248,211,18);
+      }
+      .sticker_new{
+        background: rgb(156, 194, 24);
+      }
+      .sticker_hit{
+        background: rgb(19, 164, 255);
+      }
+      .sticker_halva{
+        background-image: linear-gradient(to right, #e4ceb0 50%, #b75c3c 50%);
+        background-size: 1em 1em;
+        span{
+          display: inline-block;
+          background: #6a3637;
+          padding: 1px 4px;
+          border-radius: 2px;
+        }
+      }
+      .sticker_card{
+        background: #7303c0;
+      }
+      .sticker_credit{
+        background: rgb(255, 99, 71);
+      }
+    }
+    // отзывы и характеристики 425
+    .tabs_section {
+      max-width: 90%;
+      border-top: 1px solid rgb(156, 194, 24);
+      border-bottom: 1px solid rgb(156, 194, 24);
+      margin-left: 5% !important;
+      margin-top: 480px;
+      padding: 0% !important;
+      li {
+        display: inline-block;
+        text-align: center;
+        border-bottom: 5px solid transparent;
+        cursor: pointer;
+        a {
+          display: inline-block;
+          padding: 10px 10px;
+          font-size: 11px;
+          font-weight: bold;
+          text-decoration: none !important;
+          span {
+            color: rgb(44, 44, 44);
+          }
+        }
+      }
+      li:hover, .active {
+        border-bottom: 5px solid rgb(156, 194, 24);
+        padding: 0 !important;
+      }
+    }
+    .tabgroup {
+      width: 90% !important;
+      margin-left: 5% !important;
+      .description_box {
+        display: none;
+        width: 100%;
+        .description {
+          padding: 0%;
+          width: 100%;
+        }
+        .tab_properties {
+          padding: 0%;
+          width: 100%;
+        }
+        img {
+          max-width: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        iFrame {
+          width: 100%;
+        }
+      }
+    }
+    .shops_on_the_map {
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+
+  #body_text{
+    position:relative;
+  }
+  // правый блок 425
+  .right_panel {
+    position: absolute !important;
+    left: 0 !important;
+    top: 550px;
+    width: 100%;
+    .shadow_wrapper {
+      max-width: 80%;
+      box-shadow: inset 0px 9px 35px 0px rgba(0, 0, 0, 0.2) !important;
+      height: 100%;
+      border-radius: 0 0 15px 15px;
+      margin: auto;
+      position: relative;
+    }
+    .wrapper {
+    }
+    .price_container {
+      width: 100%;
+      padding-left: 5%;
+      position: relative;
+    }
+    // старая цена 768
+    .catalog-detail-item-price-old {
+      width: 80%;
+      padding-top: 20px;
+      font-size: 12px;
+    }
+    // стоимость 768
+    .catalog-detail-item-price {
+      position: relative;
+      .price_cont {
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(44, 44, 44);
+      }
+      // стоимость в кредит 768
+      .credit_payment {
+        color: rgb(44, 44, 44);
+        font-size: 10px;
+      }
+    }
+    #block_avl_shops {
+      width: 40%;
+      float: right;
+      position: absolute;
+      top: 15px;
+      right: 5px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      a {
+        text-decoration: none !important;
+      }
+    }
+    // наличие 425
+    .available {
+      margin-bottom: 5px;
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+      .not_avl {
+        .fa {
+          color: rgb(255, 216, 0);
+        }
+      }
+    }
+    .shops {
+      .fa {
+        font-size: 16px !important;
+        color: rgb(156, 194, 24);
+      }
+      span {
+        color: rgb(44, 44, 44) !important;
+      }
+    }
+    // кнопки на правой панели 768
+    .button_cont_m24 {
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+      margin-left: 0% !important;
+      form {
+
+      }
+    }
+
+    .btn_m24 {
+      padding: 8px 10px 8px 10px !important;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      margin-left: 10px;
+      border: 1px solid transparent;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 10px !important;
+      width: 40% !important;
+    }
+    .btn_m24:hover {
+      color: rgb(255, 255, 255);
+      background: #575b71 !important;
+      border: 1px solid #575b71;
+    }
+    .add_basket_btn {
+      width: 45% !important;
+      color: rgb(255, 255, 255);
+      font-weight: normal !important;
+      position: relative;
+    }
+    .fa-cart-plus {
+      position: absolute;
+      top: 5px;
+      right: 10%;
+      color: rgb(255, 255, 255);
+
+    }
+    .boc_anch {
+      width: 45% !important;
+      background-color: rgb(255, 255, 255) !important;
+      border: 1px solid rgb(156, 194, 24);
+      color: rgb(156, 194, 24) !important;
+
+    }
+    .btn_float_cont_m24 {
+      //position: absolute;
+      width: 100%;
+      top: 41px;
+      //right: 0;
+
+    }
+    .compare_float {
+      float: left;
+      margin-left: 10px !important;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      margin-bottom: 10px !important;
+      text-align: center !important;
+    }
+    #m24-btn-credit {
+      position: absolute;
+      width: 45% !important;
+      padding: 8px 0 8px 0 !important;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      background-color: rgb(255, 216, 0);
+      border: 1px solid rgb(255, 216, 0);
+      color: rgb(255, 255, 255);
+      font-weight: normal;
+      text-align: center !important;
+    }
+    .apuo_detail {
+      position: relative;
+      display: inline-block;
+      line-height: 1.1em !important;
+      padding: 8px 10px 8px 10px !important;
+      border-radius: 10px;
+      margin-bottom: 10px !important;
+      font-size: 10px;
+      color: rgb(255, 255, 255);
+      width: 45% !important;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+
+    }
+    .fa-clock-o {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .notify_anch {
+      display: inline-block;
+      position: relative;
+      padding: 8px 30px 8px 10px;
+      width: 50% !important;
+      line-height: 1.1em !important;
+      margin-left: 10px;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+      margin-bottom: 10px;
+      font-size: 9px !important;
+      color: rgb(255, 255, 255);
+    }
+    .fa-envelope {
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      color: rgb(255, 255, 255) !important;
+    }
+    .compare_one {
+      position: relative;
+      display: inline-block;
+      width: 45% !important;
+      margin-left: 10px !important;
+      padding: 8px 0px 8px 0px !important;
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(44, 44, 44);
+      box-shadow: inset 0px 0px 9px 0px rgba(0, 0, 0, 0.24);
+      font-size: 10px;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+    }
+    .catalog-detail-delivery-text {
+      margin-top: 20px;
+      margin-left: 10% !important;
+      max-width: 80%;
+      background-color: rgb(245, 245, 245);
+      border: none !important;
+    }
+    .card_pay_btn {
+      position: absolute;
+      top:83px;
+      right: 10.5%;
+      margin-top: 15px;
+      max-width: 40%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* Экран 425*/
+@media screen and (max-width: 384px) {
+  .card_pay_btn {
+    position: absolute;
+    top:100px!important;
+    right: 10.5%;
+    margin-top: 15px;
+    max-width: 39%!important;
+    margin-bottom: 15px;
+  }
+}
+

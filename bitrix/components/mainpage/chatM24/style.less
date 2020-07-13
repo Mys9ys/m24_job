@@ -1,0 +1,271 @@
+
+
+
+.chat_m24 {
+  display: inline-block;
+  border-radius: 25px;
+  padding: 4px;
+  margin-top: 5px;
+  //padding-bottom: 10px;
+  //background: rgba(200, 200, 200, .4);
+  background: rgba(156, 194, 24, .7);
+  .chat_title {
+    float: left;
+    padding: 10px 3px;
+    //padding-top: 15px;
+    display: inline-block;
+    padding-top: 12px;
+    font-size: 12px;
+    //line-height: 20px;
+    font-weight: bold;
+    //color: rgb(84,84,84);
+    color: rgb(255, 255, 255);
+  }
+}
+
+.messager_btn {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.social_btn {
+  position: relative;
+  //padding-bottom: 5px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-left: 3px;
+  font-size: 30px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+}
+
+.fa-telegram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //line-height: 36px;
+  color: rgb(0, 136, 204);
+}
+
+.fa-whatsapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 41px !important;
+  color: rgb(255, 255, 255);
+}
+
+.whatsapp_btn {
+  width: 34px;
+  height: 34px;
+  background: #3BBF26;
+}
+
+.telegram_btn {
+  //margin-right: 15px;
+  text-align: center;
+}
+
+.callbaska_box_btn {
+  background: rgb(0, 175, 242);
+}
+
+.fa-callbaska {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px !important;
+  color: rgb(255, 255, 255);
+}
+
+.social_btn:hover {
+  cursor: pointer;
+  animation: flipAround 0.5s infinite;
+}
+
+@keyframes flipAround {
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.chatM24_open{
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 46px;
+  height: 46px;
+  border-radius: 25px;
+  background: rgba(156, 194, 24, 1);
+  cursor: pointer;
+  box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  .fa-phone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+}
+.chatM24_close{
+  position: absolute;
+  top: 47%;
+  left: 51%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+}
+.chat_block_wrapper{
+  width: auto;
+  display: inline-block;
+  float: right;
+  .chat_block_hidden{
+    display: none;
+    //display: inline-block;
+  }
+}
+.region_chatM24{
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  .chat_title {
+    position: relative;
+    top:-5px;
+    float: none;
+    padding: 0px;
+    padding-left: 10px;
+    vertical-align: center;
+    line-height: 14px;
+  }
+  .chat_block{
+    display: inline-block;
+    float: left;
+    background: rgba(156, 194, 24, 1);
+    border-radius: 25px;
+    box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    margin-right: 2px;
+    //padding: 4px 0px;
+  }
+  .social_btn{
+    margin-top: 5px;
+  }
+  .social_btn:last-of-type{
+    margin-right: 5px;
+  }
+}
+
+.chat_m24_wrap{
+  display: inline-block;
+  position: relative;
+  .chars1_img{
+    position: absolute;
+    top:3px;
+    left: 25px;
+  }
+  .chars2_img{
+    position: absolute;
+    top:38px;
+    left: -31px;
+  }
+  .chat_m24{
+    position: relative;
+    z-index: 1;
+    background: rgb(156, 194, 24);
+    margin-top: 105px;
+    border: 2px solid rgb(255,255,255);
+  }
+  .img_hide{
+    display: none;
+  }
+}
+
+//@media screen and (min-width: 1234px) {
+//
+//}
+
+/*экран 768-1234*/
+@media screen and (min-width: 768px) and (max-width: 1233px) {
+  //.chat_m24_wrap{
+  //  display: inline-block;
+  //  position: relative;
+  //  margin-left: 60px;
+  //  .chars1_img{
+  //    position: absolute;
+  //    top:3px;
+  //    left: 25px;
+  //  }
+  //  .chars2_img{
+  //    position: absolute;
+  //    top:38px;
+  //    left: -31px;
+  //  }
+  //  .chat_m24{
+  //    position: relative;
+  //    z-index: 1;
+  //    background: rgb(156, 194, 24);
+  //    margin-top: 105px;
+  //    border: 2px solid rgb(255,255,255);
+  //  }
+  //  .img_hide{
+  //    display: none;
+  //  }
+  //}
+}
+
+/*экран 768*/
+@media screen and (min-width: 620px) and (max-width: 768px) {
+
+}
+
+/* Экран 425*/
+@media screen and (max-width: 425px) {
+
+  .chat_m24_wrap{
+    display: inline-block;
+    position: relative;
+    .chars1_img{
+      width: 78px;
+      position: absolute;
+      top:0px;
+      left: 15px;
+    }
+    .chars2_img{
+      width: 110px;
+      position: absolute;
+      top:14px;
+      left: -9px;
+    }
+    .chat_m24{
+      position: relative;
+      z-index: 1;
+      background: rgb(156, 194, 24);
+      margin-top: 45px;
+      border: 2px solid rgb(255,255,255);
+      .chat_title {
+        display: none;
+      }
+    }
+    .img_hide{
+      display: none;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,288 @@
+.massagery24-reset {
+	position: relative;
+	left: auto;
+	right: auto;
+	top:auto;
+	bottom: auto;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	border: none 0;
+	vertical-align: baseline;
+	background: none;
+	color: black;
+	outline: none;
+	line-height: normal;
+	text-transform: none;
+	text-decoration: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	border-radius: 0;
+	visibility: visible;
+	max-width: none;
+	min-width: 0;
+	max-height: none;
+	min-height: 0;
+	font-size: 10px;
+	font-family: Proxima, Helvetica, sans-serif;
+	height: auto;
+	width: auto;
+}
+	
+#massagery24-phone{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 7.2em;
+	height: 7.2em;
+	z-index: 1000000;
+	margin: 0;
+	border-radius: 50%;
+}
+
+
+#massagery24-phone-back{
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;	
+	padding-top: 1em;
+
+	
+	border: 3px solid rgb(228, 62, 50);
+	background-image: url(/images/telephone.svg);
+	background-color: rgba(244, 67, 54, 0.901961);
+		
+	display: block;
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	border-radius: 10em;
+	margin: auto;
+		
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 1.2em rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 1.6em rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 1.6em rgba(0,0,0,0.45);
+}
+
+
+.massagery24-phone-back-call{
+	background-image: none !important;
+	background-color: rgba(64, 215, 52, 0.901961) !important;
+	border: 3px solid rgba(64, 215, 52, 0.5) !important;	
+}
+
+#massagery24-phone-back span{
+ font-size: 2em;
+}
+	
+#massagery24-phone-back:hover{
+	background-color: rgba(64, 215, 52, 0.901961);
+	border: 3px solid rgba(64, 215, 52, 0.5);
+
+}	
+	
+#massagery24-phone-form {
+	width: 42em;
+	height: 4.2em;
+	top:1.1em;
+	visibility: visible;
+	-webkit-box-shadow: 0 0 1.6em rgba(0,0,0,0.45);
+	-moz-box-shadow: 0 0 1.6em rgba(0,0,0,0.45);
+	box-shadow: 0 0 1.2em rgba(0,0,0,0.4);
+	border-radius: 1em;
+	padding-top: 0.8em;
+	right: 40em; 
+	background-color: rgba(255, 255, 255, 0.921569);	
+}
+
+#massagery24-phone-form-close{
+	position: absolute;
+	z-index: 2;
+	top: -0.8em;
+	right: -1.2em;
+	width: 1.4em;
+	height: 1.4em;
+	background: url(/images/icon-close.png) no-repeat;
+	background-size: contain;
+	cursor: pointer;
+}
+	
+#massagery24-recall {
+	padding-top: 0.2em;
+	color: #333;
+	text-align: center;
+	width: 9em;
+	font-size: 1.2em;
+	padding-left: 2em;
+	float: left;
+	font-weight: bold;
+}
+	
+#massagery24-phone-field {
+	float: left;
+	padding-left: 1em;
+	z-index: 1000000;
+	padding-top: 0.4em;
+	width: 14em;
+}
+	
+#massagery24-phone-field input {
+	border: 1px solid #999;
+	height: 2.2em;
+	background-color: white;
+	font-size: 1.2em;
+	width: 7em;
+	padding-left: 3.5em;
+	padding-right: 0.5em;	
+}
+
+.massagery24-flag{
+position: absolute;
+top: 0.9em;
+width: 3.5em;
+font-size: 1.2em;
+padding-left: 0.6em;
+}
+	
+#massagery24-phone-button{
+	display: block;
+	margin-top: 0.2em;
+	padding-top: 0.6em;
+	margin-left: 0.6em;
+	padding-left: 1em;
+	font-size: 1.2em;
+	color: white;
+	width: 8em;
+	height: 1.8em;
+	float: left;
+	border-radius: 0.3em;		
+	background-color: #f44336;
+	cursor: pointer;
+	z-index: 100000000;
+	text-decoration: none;
+}
+
+#massagery24-phone-button:hover{
+	margin-top: 0.1em;
+	box-shadow: 0 0.2em 0 0 rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0.2em 0 0 rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0.2em 0 0 rgba(0,0,0,0.5);
+	
+	
+}
+
+#massagery24-phone-warning {
+	margin-top: -10em;
+	width:20em;
+	box-shadow: 0 0.2em 0.2em 0.2em rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0.2em 0.2em 0.2em rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0.2em 0.2em 0.2em rgba(0,0,0,0.5);
+}
+
+#massagery24-phone-warning-top{
+	background-color: #bb0000;
+	font-size: 1.2em;	
+	font-weight: bold;
+	color: white;
+	padding: 0.6em;
+}
+
+#massagery24-phone-warning-middle{
+	padding: 0.6em;
+	font-size: 1.2em;
+	height: 2em
+	
+}
+
+#massagery24-phone-warning-bottom {
+	height: 1em;
+	margin-bottom: 2.2em;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate(0);
+}
+.effekt {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: scale(0);
+  z-index:9998;
+  background-color: rgba(244, 67, 54, 0.7);
+  opacity: 1;
+}
+
+.effekt_hover {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: scale(0);
+  z-index:9998;
+  background-color: rgba(64, 215, 52, 0.7);
+  opacity: 1;
+}
+
+.effekt.replay {
+  -webkit-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+  -o-animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+  animation: ripple 2s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-moz-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-ms-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+@-o-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}

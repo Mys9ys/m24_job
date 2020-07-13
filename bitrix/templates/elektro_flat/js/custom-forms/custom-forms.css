@@ -1,0 +1,95 @@
+.custom-forms-wrapper{
+	float:left;
+	margin:0px 5px 4px 0px;
+	padding:0px;
+}
+
+.custom-forms-wrapper:last-child{
+	margin:0px 0px 4px 0px;
+}
+
+.custom-forms-wrapper.checkbox .master,
+.custom-forms-wrapper.radio .master{
+	display:none;
+}
+
+.custom-forms-wrapper.checkbox label,
+.custom-forms-wrapper.radio label{
+	font-family:"Open Sans", sans-serif;
+	color:#575b71;
+	line-height:30px;
+	display:block;
+	margin:0px;
+	padding:0px 12px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	border-radius:4px;
+	cursor:pointer;
+	-webkit-transition:all 0.15s ease 0s;
+	-moz-transition:all 0.15s ease 0s;
+	-o-transition:all 0.15s ease 0s;
+	transition:all 0.15s ease 0s;
+}
+
+.colors.custom-forms-wrapper.checkbox label{
+	width:26px;
+	height:26px;
+	border:2px solid transparent;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-khtml-border-radius:2px;
+	border-radius:2px;
+	padding:0px;
+}
+
+.colors.custom-forms-wrapper.checkbox label i{
+	width:24px;
+	height:24px;
+	display:block;
+}
+
+.colors.custom-forms-wrapper.checkbox label img,
+.colors.custom-forms-wrapper.checkbox label i{
+	border:1px solid #fff;
+}
+
+.custom-forms-wrapper:hover label{
+	background:#dee0ee;
+}
+
+.colors.custom-forms-wrapper:hover label{
+	border:2px solid #a0a4bc;
+}
+
+.custom-forms-wrapper.active label,
+.custom-forms-wrapper.active:hover label{
+	color:#000;
+	background:#fde037;
+}
+
+.colors.custom-forms-wrapper.active label,
+.colors.custom-forms-wrapper.active:hover label{
+	border:2px solid #fde037;
+}
+
+.custom-forms-wrapper.checkbox label.disabled,
+.custom-forms-wrapper.radio label.disabled,
+.custom-forms-wrapper.active label.disabled{
+	color:#b7bbd3;
+	background:none;
+	cursor:default;
+}
+
+.colors.custom-forms-wrapper.checkbox label.disabled{
+	width:24px;
+	height:24px;
+	border:3px solid #edeef8;
+	background:#b7bbd3;
+}
+
+.colors.custom-forms-wrapper.checkbox label.disabled i,
+.colors.custom-forms-wrapper.checkbox label.disabled img{
+	display:none;
+	visibility:hidden;
+}

@@ -1,0 +1,347 @@
+textarea {
+  resize: vertical;
+}
+textarea, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+}
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+.captcha{
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(156, 194, 24, 1);
+  .captcha-title{
+    float: left;
+    color: rgb(255,255,255);
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .captcha-range{
+    float: left;
+    width: 50px;
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: rgb(255, 78, 51);
+    box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    outline: none;
+  }
+  .captcha-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:18px;
+    height:18px;
+    background: rgb(255,255,255);
+    border-radius:18px;
+    box-shadow: 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+    cursor:pointer;
+    transition:.1s;
+  }
+}
+
+.form-elem, .form-textarea{
+  border: 1px solid rgb(156, 194, 24);
+}
+.form-alert{
+  border: 1px solid rgb(255, 78, 51);
+}
+.partnership-checkbox-imitate{
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  top:0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(130, 161, 21);
+  box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+  cursor: pointer;
+  .imitate-check{
+    position: absolute;
+    top:6px;
+    left:6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+  }
+}
+label{
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: rgba(40, 40, 40, 0.5);
+  a{
+    color: rgb(255, 78, 51)!important;
+  }
+}
+.inactiveCheck{
+  background: rgb(130, 161, 21)!important;
+}
+
+@media screen and (min-width: 601px) {
+  .partnership-wrap{
+    display: inline-block;
+    width: 50%;
+    h2{
+      color: rgb(40,40,40);
+    }
+  }
+  .partnership-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(156, 194, 24);
+    box-shadow: 0px 2px 8px 0px rgba(40,40,40, .4);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 10px;
+  }
+  .partnership-btn:active{
+    box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+  }
+  #partnershipModal{
+    .modal-header{
+      h2{
+        color: rgb(156, 194, 24);
+        text-align: center;
+      }
+    }
+    .modal-body{
+      background: rgb(215, 231, 163);
+      .form-wrap{
+        position: relative;
+        margin-bottom: 5px;
+        .form-elem{
+          width: 100%;
+          padding: 10px 15px;
+          padding-right: 300px;
+          border-radius: 5px;
+          box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+        }
+        .form-title{
+          color: rgb(40,40,40);
+          text-transform: uppercase;
+          font-weight: bold;
+          background: rgb(255,255,255);
+          position: absolute;
+          right: 0;
+          top:0;
+          width: 300px;
+          padding: 10px;
+          border: 1px solid rgb(156, 194, 24);
+          //box-shadow: 0px 2px 8px 0px rgba(40,40,40, .4);
+          border-radius: 0 5px 5px 0;
+        }
+      }
+      .form-textarea{
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+        padding: 15px;
+      }
+      .wrap{
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        padding: 10px 15px;
+        background: rgb(156, 194, 24);
+        text-transform: uppercase;
+        color: rgb(255,255,255);
+        font-weight: bold;
+        box-shadow: inset 0px 2px 8px 0px rgb(215, 231, 163);
+        border: 1px solid rgb(156, 194, 24);
+        border-radius: 5px;
+      }
+    }
+    .modal-footer{
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width:325px) and (max-width:600px){
+  .partnership-wrap{
+    display: inline-block;
+    width: 50%;
+    h2{
+      color: rgb(40,40,40);
+    }
+  }
+  .partnership-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(156, 194, 24);
+    box-shadow: 0px 2px 8px 0px rgba(40,40,40, .4);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 10px;
+  }
+  .partnership-btn:active{
+    box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+  }
+  #partnershipModal{
+    .modal-header{
+      h2{
+        color: rgb(156, 194, 24);
+        text-align: center;
+      }
+    }
+    .modal-body{
+      background: rgb(215, 231, 163);
+      .form-wrap{
+        position: relative;
+        margin-bottom: 5px;
+        .form-elem{
+          width: 100%;
+          padding: 10px 15px;
+          padding-right: 150px;
+          border-radius: 5px;
+          box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+        }
+        .form-title{
+          color: rgb(40,40,40);
+          text-transform: uppercase;
+          font-weight: bold;
+          background: rgb(255,255,255);
+          position: absolute;
+          right: 0;
+          top:0;
+          width: 150px;
+          padding: 10px;
+          border: 1px solid rgb(156, 194, 24);
+          //box-shadow: 0px 2px 8px 0px rgba(40,40,40, .4);
+          border-radius: 0 5px 5px 0;
+        }
+      }
+      .form-textarea{
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+        padding: 15px;
+      }
+      .wrap{
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        padding: 10px 15px;
+        background: rgb(156, 194, 24);
+        text-transform: uppercase;
+        color: rgb(255,255,255);
+        font-weight: bold;
+        box-shadow: inset 0px 2px 8px 0px rgb(215, 231, 163);
+        border: 1px solid rgb(156, 194, 24);
+        border-radius: 5px;
+      }
+    }
+    .modal-footer{
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width:324px){
+  .partnership-wrap{
+    display: inline-block;
+    width: 100%;
+    h2{
+      color: rgb(40,40,40);
+    }
+  }
+  .partnership-btn{
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(156, 194, 24);
+    box-shadow: 0px 2px 8px 0px rgba(40,40,40, .4);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 10px;
+  }
+  .partnership-btn:active{
+    box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+  }
+  #partnershipModal{
+    .modal-header{
+      h2{
+        color: rgb(156, 194, 24);
+        text-align: center;
+      }
+    }
+    .modal-body{
+      background: rgb(215, 231, 163);
+      .form-wrap{
+        position: relative;
+        margin-bottom: 5px;
+        .form-elem{
+          width: 100%;
+          padding: 10px 15px;
+          padding-right: 110px;
+          border-radius: 5px;
+          box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+        }
+        .form-title{
+          color: rgb(40,40,40);
+          text-transform: uppercase;
+          font-weight: bold;
+          background: rgb(255,255,255);
+          position: absolute;
+          right: 0;
+          top:0;
+          font-size: 10px;
+          width: 110px;
+          padding: 11px;
+          border: 1px solid rgb(156, 194, 24);
+          //box-shadow: 0px 2px 8px 0px rgba(40,40,40, .4);
+          border-radius: 0 5px 5px 0;
+        }
+      }
+      .form-textarea{
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: inset 0px 2px 8px 0px rgba(40,40,40, .4);
+        padding: 15px;
+      }
+      .wrap{
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        padding: 10px 15px;
+        background: rgb(156, 194, 24);
+        text-transform: uppercase;
+        color: rgb(255,255,255);
+        font-weight: bold;
+        box-shadow: inset 0px 2px 8px 0px rgb(215, 231, 163);
+        border: 1px solid rgb(156, 194, 24);
+        border-radius: 5px;
+      }
+    }
+    .modal-footer{
+      padding-bottom: 70px;
+      text-align: left;
+    }
+  }
+}

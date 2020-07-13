@@ -1,0 +1,148 @@
+@Pagencolor: rgb(156, 194, 24);
+@Pageblack: rgb(41,41,41);
+@Pagenred: rgb(255, 99, 71);
+@Pagenorange: rgb(234, 182, 41);
+@Pagenblue: rgb(34, 164, 245);
+
+
+.diagram_container{
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.basket_table_hover{
+  background: rgba(156, 194, 24, 0.3)!important;
+}
+.table_basket{
+  color: @Pageblack;
+}
+.drop_basket_btn{
+  display: inline-block;
+  line-height: 24px;
+  color: rgb(255, 255, 255)!important;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none!important;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    background: #575b71;
+  }
+}
+.lamp{
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.lamp_sale{
+  background: @Pagencolor;
+  box-shadow: 0px 0px 7px  @Pagencolor;
+}
+.lamp_consultation, .lamp_amoCRM{
+  background: @Pagenblue;
+  box-shadow: 0px 0px 7px  @Pagenblue;
+}
+.lamp_error, .lamp_not_processed, .lamp_confirm{
+  background: @Pagenred;
+  box-shadow: 0px 0px 7px @Pagenred;
+}
+.lamp_already_buy, .lamp_no_answer, .lamp_another{
+  background: @Pagenorange;
+  box-shadow: 0px 0px 7px @Pagenorange;
+}
+.drop_product{
+  display: inline-block;
+  text-decoration: none!important;
+  margin-bottom: 3px;
+  color: @Pageblack!important;
+  border: 1px solid @Pagencolor;
+  border-radius: 5px;
+  padding: 4px;
+  &:hover{
+    color: @Pagencolor!important;
+  }
+}
+
+
+
+
+.modal-dialog{
+  width: 700px!important;
+}
+.modal-title{
+  color: @Pagencolor;
+  font-size: 24px;
+}
+.block-title{
+  display: inline-block;
+  color: @Pagencolor;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.result_box{
+  .item_box{
+    display: inline-block;
+    position: relative;
+    padding: 30px 7px 7px 7px;
+    color: @Pageblack;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background: #575b71;
+      color: rgb(255,255,255);
+    }
+  }
+  .not_processed{
+    background-color: #f2dede;
+  }
+  .sale{
+    background-color: #dff0d8;
+  }
+  .consultation, .amoCRM{
+    background-color: #d9edf7;
+  }
+  .no_answer{
+    background-color: #fcf8e3;
+  }
+  .error{
+    background-color: #f2dede;
+  }
+  .another{
+    background-color: #fcf8e3;
+  }
+  .already_buy{
+    background-color: #fcf8e3;
+  }
+}
+
+.check_box{
+  position: absolute;
+  top:5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+}
+.active_check{
+  .imitate_check_item{
+    position: absolute;
+    top:6px;
+    left:6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+  }
+}

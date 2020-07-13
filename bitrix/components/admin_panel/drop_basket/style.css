@@ -1,0 +1,137 @@
+.diagram_container {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+.basket_table_hover {
+  background: rgba(156, 194, 24, 0.3) !important;
+}
+.table_basket {
+  color: #292929;
+}
+.drop_basket_btn {
+  display: inline-block;
+  line-height: 24px;
+  color: #ffffff !important;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none!important;
+  text-align: center;
+  cursor: pointer;
+}
+.drop_basket_btn:hover {
+  background: #575b71;
+}
+.lamp {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.lamp_sale {
+  background: #9cc218;
+  box-shadow: 0px 0px 7px #9cc218;
+}
+.lamp_consultation,
+.lamp_amoCRM {
+  background: #22a4f5;
+  box-shadow: 0px 0px 7px #22a4f5;
+}
+.lamp_error,
+.lamp_not_processed,
+.lamp_confirm {
+  background: #ff6347;
+  box-shadow: 0px 0px 7px #ff6347;
+}
+.lamp_already_buy,
+.lamp_no_answer,
+.lamp_another {
+  background: #eab629;
+  box-shadow: 0px 0px 7px #eab629;
+}
+.drop_product {
+  display: inline-block;
+  text-decoration: none!important;
+  margin-bottom: 3px;
+  color: #292929 !important;
+  border: 1px solid #9cc218;
+  border-radius: 5px;
+  padding: 4px;
+}
+.drop_product:hover {
+  color: #9cc218 !important;
+}
+.modal-dialog {
+  width: 700px!important;
+}
+.modal-title {
+  color: #9cc218;
+  font-size: 24px;
+}
+.block-title {
+  display: inline-block;
+  color: #9cc218;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.result_box .item_box {
+  display: inline-block;
+  position: relative;
+  padding: 30px 7px 7px 7px;
+  color: #292929;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.result_box .item_box:hover {
+  background: #575b71;
+  color: #ffffff;
+}
+.result_box .not_processed {
+  background-color: #f2dede;
+}
+.result_box .sale {
+  background-color: #dff0d8;
+}
+.result_box .consultation,
+.result_box .amoCRM {
+  background-color: #d9edf7;
+}
+.result_box .no_answer {
+  background-color: #fcf8e3;
+}
+.result_box .error {
+  background-color: #f2dede;
+}
+.result_box .another {
+  background-color: #fcf8e3;
+}
+.result_box .already_buy {
+  background-color: #fcf8e3;
+}
+.check_box {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0px 2px 8px 0px rgba(40, 40, 40, 0.3);
+}
+.active_check .imitate_check_item {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+}

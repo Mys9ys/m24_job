@@ -1,0 +1,73 @@
+@Pagencolor: rgb(156, 194, 24);
+@Pageblack: rgb(41,41,41);
+@Pagenred: rgb(255, 99, 71);
+#workarea{
+  width: 100%!important;
+}
+
+.tabs {
+  display: inline-block;
+  width: 20%;
+  float: left;
+  margin-top: 20px!important;
+  border: 2px solid @Pagencolor;
+  border-radius: 5px;
+  padding: 0!important;
+  li {
+    list-style:none;
+    width:100%;
+    margin-bottom: 3px;
+    .tabs_a {
+      position: relative;
+      display:inline-block;
+      padding: 5px;
+      width: 100%;
+      //text-align:center;
+      text-decoration:none!important;
+      color:@Pageblack!important;
+      //border-radius: 5px 0 0 5px;
+      &:hover, &.active {
+        color:rgb(255,255,255)!important;
+        background: @Pagencolor!important;
+
+      }
+      .fa{
+        position: absolute;
+        right: 10px;
+        top:50%;
+        transform: translateY(-50%);
+      }
+    }
+    .sms_balance{
+      margin-left: 5px;
+    }
+  }
+  li:last-child{
+    margin-bottom: 0px;
+  }
+}
+.tabgroup {
+  display: inline-block;
+  width: 78%;
+  margin-left: 2%;
+  float: left;
+  min-height: 600px;
+  border: 2px solid @Pagencolor;
+  border-radius: 5px;
+  .tabs_block{
+    padding: 10px;
+    .tab_title{
+      width: 100%;
+      color: @Pageblack;
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+
+.orange_title {
+  background: rgb(234, 182, 41)!important;
+  border-color: rgb(234, 182, 41)!important;
+}

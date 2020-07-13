@@ -1,0 +1,63 @@
+#workarea {
+  width: 100%!important;
+}
+.tabs {
+  display: inline-block;
+  width: 20%;
+  float: left;
+  margin-top: 20px!important;
+  border: 2px solid #9cc218;
+  border-radius: 5px;
+  padding: 0!important;
+}
+.tabs li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 3px;
+}
+.tabs li .tabs_a {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  text-decoration: none!important;
+  color: #292929 !important;
+}
+.tabs li .tabs_a:hover,
+.tabs li .tabs_a.active {
+  color: #ffffff !important;
+  background: #9cc218 !important;
+}
+.tabs li .tabs_a .fa {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tabs li .sms_balance {
+  margin-left: 5px;
+}
+.tabs li:last-child {
+  margin-bottom: 0px;
+}
+.tabgroup {
+  display: inline-block;
+  width: 78%;
+  margin-left: 2%;
+  float: left;
+  min-height: 600px;
+  border: 2px solid #9cc218;
+  border-radius: 5px;
+}
+.tabgroup .tabs_block {
+  padding: 10px;
+}
+.tabgroup .tabs_block .tab_title {
+  width: 100%;
+  color: #292929;
+  font-size: 20px;
+}
+.orange_title {
+  background: #eab629 !important;
+  border-color: #eab629 !important;
+}
